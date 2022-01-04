@@ -10,6 +10,11 @@ class Controller{
 
     public function cargarTemplate($nombreView, $datosModel = array()){
         $this->datos = $datosModel;
+        require 'Views/template.php';
+    }
+
+    public function cargarViewEnTemplate($nombreView, $datosModel = array()){
+        extract($datosModel);
         require 'Views/'.$nombreView.'.php';
     }
 }
