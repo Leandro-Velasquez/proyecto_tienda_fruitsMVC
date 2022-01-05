@@ -30,13 +30,47 @@
 <?php
     $this->cargarViewEnTemplate($nombreView, $datosModel);
 ?>
-    <!---------->
-    <footer>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </footer>
     <!--FOOTER-->
+    <footer class="footer">
+        <div class="container-flex-items">
+            <div class="container-flex-items__item1">
+                <h3 class="container-flex-items__h3">About us</h3>
+                <p class="container-flex-items__p">Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+            </div>
+            <div class="container-flex-items__item2">
+                <h3 class="container-flex-items__h3">Get in Touch</h3>
+                <p class="container-flex-items__p">34/8, East Hukupara, Gifirtok, Sadan.</p>
+                <p class="container-flex-items__p">support@domain.com</p>
+                <p class="container-flex-items__p">+00 111 222 3333</p>
+            </div>
+            <div class="container-flex-items__item3">
+                <h3 class="container-flex-items__h3">Pages</h3>
+                <a href="" class="container-flex-items__item3-a"><i class="fas fa-chevron-right"></i>Home</a>
+                <a href="" class="container-flex-items__item3-a"><i class="fas fa-chevron-right"></i>About</a>
+                <a href="" class="container-flex-items__item3-a"><i class="fas fa-chevron-right"></i>Shop</a>
+                <a href="" class="container-flex-items__item3-a"><i class="fas fa-chevron-right"></i>News</a>
+                <a href="" class="container-flex-items__item3-a"><i class="fas fa-chevron-right"></i>Contact</a>
+            </div>
+            <div class="container-flex-items__item4">
+                <h3 class="container-flex-items__h3">Subscribe</h3>
+                <p class="container-flex-items__p">Subscribe to our mailing list to get the latest updates.</p>
+                <form action="" class="container-flex-items__form">
+                    <input type="text" class="container-flex-items__input">
+                    <button class="container-flex-items__form-button"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="div-social">
+            <p class="container-flex-items__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div>
+                <a class="div-social__a" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="div-social__a" href=""><i class="fab fa-twitter"></i></a>
+                <a class="div-social__a" href=""><i class="fab fa-instagram"></i></a>
+                <a class="div-social__a" href=""><i class="fab fa-linkedin"></i></a>
+                <a class="div-social__a" href=""><i class="fab fa-dribbble"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!---------->
 </body>
 </html>
