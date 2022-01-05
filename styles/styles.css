@@ -1,0 +1,87 @@
+body{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*ESTILOS HEADER*/
+.header {
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("../Img/manzanas.jpg") no-repeat center center fixed;
+    background-size: cover;
+    padding: 0px 10px;
+    padding-top: 30px;
+}
+.nav {
+
+}
+.nav__div1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__search {
+    color: white;
+    margin-right: 15px;
+}
+.btn-menu {
+    background-color: #519259;
+    border: none;
+    outline: none;
+}
+.fa-bars {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 22px;
+    font-size: 19px;
+}
+.menu {
+    width: 100%;
+    padding: 0;
+    background-color: #011527;
+    list-style-type: none;
+}
+.menu__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    padding-left: 10px;
+    border-bottom: 1px solid #FAEDF0;
+    text-transform: uppercase;
+}
+.menu__item--modified{
+    padding: 0;
+}
+.menu__item--modified-shopping-cart {
+    border-bottom: none;
+}
+.li__div-a {
+    padding: 10px 0px;
+    padding-left: 10px;
+}
+.menu__img {
+    width: 100px;
+    height: 50px;
+}
+.menu__div1 {
+
+}
+.menu__div1-a, .menu__div2-a {
+    color: white;
+    text-decoration: none;
+}
+.menu__item-div-a {
+
+}
+.menu__item-button {
+    width: 40px;
+    background-color: #0d375c;
+    border: 1px solid #FAEDF0;
+}
+.fa-plus {
+    color: white;
+}
+.menu__div2 {
+    
+}
