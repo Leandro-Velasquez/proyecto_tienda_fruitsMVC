@@ -6,6 +6,7 @@ class Core{
     }
 
     public function run(){
+        $parametros = array();
         if(isset($_GET['pag']) && !empty($_GET['pag'][0])){
             $url = explode('/', $_GET['pag']);
             $controller = $url[0].'Controller';
@@ -34,9 +35,9 @@ class Core{
             $controller = 'HomeController';
             $metodo = 'index';
         }
-
+        
         $c = new $controller;
-        call_user_func_array(array($controller, $metodo), $parametros);
+        call_user_func_array(array($c, $metodo), $parametros);
     }
 }
 ?>
