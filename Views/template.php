@@ -12,19 +12,24 @@
     <!--HEADER-->
     <header class="header">
         <nav class="nav">
-            <ul class="menu">
-                <li class="menu__item"><img src="Img/logo.png" alt="logo"></li>
+            <div class="nav__div1">
+                <img class="menu__img" src="Img/logo.png" alt="logo">
                 <div>
-                    <li class="menu__item">Home</li>
-                    <li class="menu__item">About</li>
-                    <li class="menu__item">Pages</li>
-                    <li class="menu__item">News</li>
-                    <li class="menu__item">Contact</li>
-                    <li class="menu__item">Shop</li>
+                    <a href="" class="nav__search"><i class="fas fa-search"></i></a>
+                    <button class="btn-menu"><i class="fas fa-bars"></i></button>
                 </div>
-                <div>
-                    <li class="menu__item"><i class="fas fa-shopping-cart"></i></li>
-                    <li class="menu__item"><i class="fas fa-search"></i></li>
+            </div>
+            <ul class="menu">
+                <div class="menu__div1">
+                    <li class="menu__item"><a href="" class="menu__div1-a">Home</a><button><i class="fas fa-plus"></i></button></li>
+                    <li class="menu__item"><a href="" class="menu__div1-a">About</a></li>
+                    <li class="menu__item"><a href="" class="menu__div1-a">Pages</a><button><i class="fas fa-plus"></i></button></li>
+                    <li class="menu__item"><a href="" class="menu__div1-a">News</a><button><i class="fas fa-plus"></i></button></li>
+                    <li class="menu__item"><a href="" class="menu__div1-a">Contact</a></li>
+                    <li class="menu__item"><a href="" class="menu__div1-a">Shop</a><button><i class="fas fa-plus"></i></button></li>
+                </div>
+                <div class="menu__div2">
+                    <li class="menu__item menu__item--modified"><a class="menu__div2-a" href=""><i class="fas fa-shopping-cart"></i></a></li>
                 </div>
             </ul>
         </nav>
