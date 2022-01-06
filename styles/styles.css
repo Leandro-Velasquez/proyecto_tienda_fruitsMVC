@@ -158,6 +158,15 @@ body{
     width: 20px;
     border: 1px solid #519259;
 }
+.container-flex-items__p {
+    color: #adadad;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+
+
+
 /*ESTILOS JAVASCRIPT*/
 .mostrar-menu {
     display: block;
