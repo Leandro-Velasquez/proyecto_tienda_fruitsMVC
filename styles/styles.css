@@ -134,7 +134,7 @@ body{
 
 /*ESTILOS FOOTER*/
 .footer {
-    padding: 50px 20px;
+    padding: 50px 0px;
     color: white;
     background-color: #011527;
 }
@@ -143,8 +143,9 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.container-flex-items__item1, .container-flex-items__item2, .container-flex-items__item3, .container-flex-items__item4 {
+.container-flex-items__item1, .container-flex-items__item2, .container-flex-items__item3, .container-flex-items__item4, .div-social {
     width: 100%;
+    padding: 0px 20px;
 }
 .container-flex-items__h3 {
     position: relative;
@@ -190,11 +191,12 @@ body{
     font-size: 12px;
 }
 .container-flex-items__item4 {
-
+    padding-bottom: 100px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 .container-flex-items__input {
-    height: 40px;
-    width: 80%;
+    height: 60px;
+    width: 70%;
     padding: 0px 15px;
     background-color: #0d375c;
     border: none;
@@ -202,10 +204,29 @@ body{
     outline: none;
     color: white;
     caret-color: white;
+    font-size: 16px;
 }
 .container-flex-items__input:focus {
     outline: 1px solid white;
     outline-offset: 2px;
+}
+.container-flex-items__form-button {
+    height: 60px;
+    width: 60px;
+    background-color: #0d375c;
+    border: none;
+    border-radius: 5px;
+}
+.container-flex-items__form-button:hover {
+    background-color: #519259;
+    transition: all .4s;
+}
+.fa-paper-plane {
+    color: #519259;
+}
+.container-flex-items__form-button:hover .fa-paper-plane {
+    color: #0d375c;
+    transition: all .4s;
 }
 
 
