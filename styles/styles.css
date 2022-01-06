@@ -10,9 +10,10 @@ body{
     background-size: cover;
     padding: 0px 10px;
     padding-top: 30px;
+    height: 100vh;
 }
 .nav {
-
+    position: relative;
 }
 .nav__div1 {
     display: flex;
@@ -37,6 +38,8 @@ body{
     font-size: 19px;
 }
 .menu {
+    display: none;
+    position: absolute;
     width: 100%;
     padding: 0;
     background-color: #011527;
@@ -84,4 +87,11 @@ body{
 }
 .menu__div2 {
     
+}
+
+
+
+/*ESTILOS JAVASCRIPT*/
+.mostrar-menu {
+    display: block;
 }
