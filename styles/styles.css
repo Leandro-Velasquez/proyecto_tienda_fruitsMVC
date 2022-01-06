@@ -189,7 +189,24 @@ body{
     color: #519259;
     font-size: 12px;
 }
+.container-flex-items__item4 {
 
+}
+.container-flex-items__input {
+    height: 40px;
+    width: 80%;
+    padding: 0px 15px;
+    background-color: #0d375c;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    caret-color: white;
+}
+.container-flex-items__input:focus {
+    outline: 1px solid white;
+    outline-offset: 2px;
+}
 
 
 /*ESTILOS JAVASCRIPT*/

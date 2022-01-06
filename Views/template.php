@@ -70,11 +70,11 @@
                     </li>
                 </ul>
             </div>
-            <div class="container-flex-items__item4">
+            <div class="container-flex-items__item4 subscribe">
                 <h3 class="container-flex-items__h3">Subscribe</h3>
                 <p class="container-flex-items__p">Subscribe to our mailing list to get the latest updates.</p>
                 <form action="" class="container-flex-items__form">
-                    <input type="text" class="container-flex-items__input">
+                    <input type="text" class="container-flex-items__input" placeholder="Email">
                     <button class="container-flex-items__form-button"><i class="fas fa-paper-plane"></i></button>
                 </form>
             </div>
