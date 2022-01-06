@@ -143,7 +143,7 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.container-flex-items__item1, .container-flex-items__item2, .container-flex-items__item3, .container-flex-items__item4, .div-social {
+.container-flex-items__item1, .container-flex-items__item2, .container-flex-items__item3, .container-flex-items__item4 {
     width: 100%;
     padding: 0px 20px;
 }
@@ -228,7 +228,32 @@ body{
     color: #0d375c;
     transition: all .4s;
 }
+.div-social {
+    padding: 0px 20px;
+}
+.div-social__ul {
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.div-social__li {
 
+}
+.div-social__a {
+    color: #adadad;
+}
+.div-social__a:hover {
+    color: #519259;
+    transition: all .4s;
+}
+.fa-facebook-f, .fa-twitter, .fa-instagram, .fa-linkedin, .fa-dribbble {
+    font-size: 20px;
+    font-weight: 900;
+}
 
 /*ESTILOS JAVASCRIPT*/
 .mostrar-menu {

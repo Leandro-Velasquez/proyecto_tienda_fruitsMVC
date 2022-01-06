@@ -81,13 +81,23 @@
         </div>
         <div class="div-social">
             <p class="container-flex-items__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div>
-                <a class="div-social__a" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="div-social__a" href=""><i class="fab fa-twitter"></i></a>
-                <a class="div-social__a" href=""><i class="fab fa-instagram"></i></a>
-                <a class="div-social__a" href=""><i class="fab fa-linkedin"></i></a>
-                <a class="div-social__a" href=""><i class="fab fa-dribbble"></i></a>
-            </div>
+            <ul class="div-social__ul">
+                <li class="div-social__li">
+                    <a class="div-social__a" href=""><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="div-social__li">
+                    <a class="div-social__a" href=""><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="div-social__li">
+                    <a class="div-social__a" href=""><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="div-social__li">
+                    <a class="div-social__a" href=""><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li class="div-social__li">
+                    <a class="div-social__a" href=""><i class="fab fa-dribbble"></i></a>
+                </li>
+            </ul>
         </div>
     </footer>
     <!---------->
