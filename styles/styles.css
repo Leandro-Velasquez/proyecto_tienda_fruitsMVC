@@ -6,7 +6,7 @@ body{
 
 /*ESTILOS HEADER*/
 .header {
-    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("../Img/manzanas.jpg") no-repeat center center fixed;
+    background: linear-gradient(rgba(5, 7, 12, 0.55), rgba(5, 7, 12, 0.55)), url("../Img/manzanas.jpg") no-repeat center center fixed;
     background-size: cover;
     padding: 0px 10px;
     padding-top: 30px;
@@ -89,7 +89,48 @@ body{
     
 }
 
+.header-div {
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+}
+.header-div__p {
+    color: #519259;
+    letter-spacing: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.header-div__h1 {
 
+}
+.header-div__div-container-link {
+
+}
+.header-div__a {
+    display: block;
+    width: 90%;
+    padding: 15px 0px;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: #519259;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+}
+.header-div__a:hover {
+    background-color: #011527;
+    color: #519259;
+    transition: .3s;
+}
+.header-div__a--modified {
+    border: 2px solid #519259;
+    background-color: inherit;
+}
+.header-div__a--modified:hover {
+    color: white;
+    background-color: #519259;
+    transition: .3s;
+}
 
 /*ESTILOS JAVASCRIPT*/
 .mostrar-menu {
