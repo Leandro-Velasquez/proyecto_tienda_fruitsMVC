@@ -52,11 +52,23 @@
             </div>
             <div class="container-flex-items__item3">
                 <h3 class="container-flex-items__h3">Pages</h3>
-                <a href="" class="container-flex-items__item3-a"><i class="fas fa-chevron-right"></i>Home</a>
-                <a href="" class="container-flex-items__item3-a"><i class="fas fa-chevron-right"></i>About</a>
-                <a href="" class="container-flex-items__item3-a"><i class="fas fa-chevron-right"></i>Shop</a>
-                <a href="" class="container-flex-items__item3-a"><i class="fas fa-chevron-right"></i>News</a>
-                <a href="" class="container-flex-items__item3-a"><i class="fas fa-chevron-right"></i>Contact</a>
+                <ul class="ul-pages-a">
+                    <li class="ul-pages-a__li">
+                        <a href="" class="container-flex-items__item3-a"><i class="fas fa-chevron-right"></i>Home</a>
+                    </li>
+                    <li class="ul-pages-a__li">
+                        <a href="" class="container-flex-items__item3-a"><i class="fas fa-chevron-right"></i>About</a>
+                    </li>
+                    <li class="ul-pages-a__li">
+                        <a href="" class="container-flex-items__item3-a"><i class="fas fa-chevron-right"></i>Shop</a>
+                    </li>
+                    <li class="ul-pages-a__li">
+                        <a href="" class="container-flex-items__item3-a"><i class="fas fa-chevron-right"></i>News</a>
+                    </li>
+                    <li class="ul-pages-a__li">
+                        <a href="" class="container-flex-items__item3-a"><i class="fas fa-chevron-right"></i>Contact</a>
+                    </li>
+                </ul>
             </div>
             <div class="container-flex-items__item4">
                 <h3 class="container-flex-items__h3">Subscribe</h3>
