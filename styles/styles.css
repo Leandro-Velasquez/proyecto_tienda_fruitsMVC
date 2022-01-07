@@ -255,6 +255,41 @@ body{
     font-weight: 900;
 }
 
+/*ESTILOS SECTION-SERVICE(home.php)*/
+.section-service {
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+.container-service {
+    
+}
+.container-service__div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.container-service__h3 {
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+.container-service__p {
+    margin: 0;
+    color: #807e7e;
+}
+.fa-shipping-fast, .fa-phone-volume, .fa-sync {
+    margin-right: 15px;
+    padding: 20px;
+    color: #519259;
+    border: 2px solid #519259;
+    border-style: dotted;
+    border-radius: 50%;
+    font-size: 25px;
+}
+.fa-phone-volume {
+    padding: 20px 25px;
+}
+
 /*ESTILOS JAVASCRIPT*/
 .mostrar-menu {
     display: block;
