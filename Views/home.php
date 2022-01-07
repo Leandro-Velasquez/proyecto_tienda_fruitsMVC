@@ -34,3 +34,13 @@
         </div>
     </div>
 </section>
+<section class="section-our-products">
+    <div class="section-our-products__div">
+        <h2 class="section-our-products__h2"><span class="section-our-products__span">Our</span> Products</h2>
+        <p class="section-our-products__p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, impedit natus nihil. Architecto, tenetur sit!</p>
+    </div>
+    <div class="section-our-products__div-products">
+        <h2>Falta realizar esta parte</h2>
+        <!--Para esta parte vamos a usar php-->
+    </div>
+</section>
