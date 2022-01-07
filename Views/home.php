@@ -47,8 +47,9 @@
 <section class="section-deal-month">
     <div class="section-deal-month__div1">
         <img class="section-deal-month__img" src="Img/deal-month.jpg" alt="">
-        <div>
-            <div></div>
+        <div class="offer-poster">
+            <span class="offer-poster__span">30%</span>
+            <p class="offer-poster__p">off per kg</p>
         </div>
     </div>
     <div class="section-deal-month__div2">

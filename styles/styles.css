@@ -321,9 +321,40 @@ body{
     color: #807e7e;
     line-height: 25px;
 }
+/*ESTILOS DEAL-MONTH(home.php)*/
+.section-deal-month {
 
-
-
+}
+.section-deal-month__div1 {
+    height: 70vh;
+    position: relative;
+}
+.section-deal-month__img {
+    height: 100%;
+    width: 100%;
+}
+.offer-poster {
+    width: 100px;
+    height: 100px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    background-color: #519259;
+    border-radius: 50%;
+    outline: 6px solid #78c080;
+}
+.offer-poster__span {
+    font-weight: 700;
+    font-size: 24px;
+}
+.offer-poster__p {
+    margin: 0;
+    margin-bottom: 10px;
+}
 
 
 
