@@ -44,3 +44,35 @@
         <!--Para esta parte vamos a usar php-->
     </div>
 </section>
+<section class="section-deal-month">
+    <div class="section-deal-month__div1">
+        <img class="section-deal-month__img" src="Img/deal-month.jpg" alt="">
+        <div>
+            <div></div>
+        </div>
+    </div>
+    <div class="section-deal-month__div2">
+        <h2 class="section-deal-month__h2"><span class="section-deal-month__span-h2">Deal</span> of the month</h2>
+        <span class="section-deal-month__subtitle">hikan strwaberry</span>
+        <p class="section-deal-month__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse, tempora ut nihil labore recusandae veritatis natus, fuga quis quod consequuntur dolore commodi vitae dolorum id, dicta molestiae eveniet cupiditate!</p>
+        <div class="section-deal-month__div-accountant-deal">
+            <div>
+                <span></span>
+                <p>Days</p>
+            </div>
+            <div>
+                <span></span>
+                <p>Hours</p>
+            </div>
+            <div>
+                <span></span>
+                <p>Mins</p>
+            </div>
+            <div>
+                <span></span>
+                <p>Secs</p>
+            </div>
+        </div>
+        <a class="section-deal-month__button" href=""><i class="fas fa-shopping-cart"></i>Add to Cart</a>
+    </div>
+</section>
