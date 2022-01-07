@@ -56,22 +56,22 @@
         <h2 class="section-deal-month__h2"><span class="section-deal-month__span-h2">Deal</span> of the month</h2>
         <span class="section-deal-month__subtitle">hikan strwaberry</span>
         <p class="section-deal-month__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse, tempora ut nihil labore recusandae veritatis natus, fuga quis quod consequuntur dolore commodi vitae dolorum id, dicta molestiae eveniet cupiditate!</p>
-        <div class="section-deal-month__div-accountant-deal">
-            <div>
-                <span></span>
-                <p>Days</p>
+        <div class="div-accountant-deal">
+            <div class="div-accountant-deal__box">
+                <span class="div-accountant-deal__span">8425</span>
+                <p class="div-accountant-deal__p">Days</p>
             </div>
-            <div>
-                <span></span>
-                <p>Hours</p>
+            <div class="div-accountant-deal__box">
+                <span class="div-accountant-deal__span">06</span>
+                <p class="div-accountant-deal__p">Hours</p>
             </div>
-            <div>
-                <span></span>
-                <p>Mins</p>
+            <div class="div-accountant-deal__box">
+                <span class="div-accountant-deal__span">42</span>
+                <p class="div-accountant-deal__p">Mins</p>
             </div>
-            <div>
-                <span></span>
-                <p>Secs</p>
+            <div class="div-accountant-deal__box">
+                <span class="div-accountant-deal__span">20</span>
+                <p class="div-accountant-deal__p">Secs</p>
             </div>
         </div>
         <a class="section-deal-month__button" href=""><i class="fas fa-shopping-cart"></i>Add to Cart</a>

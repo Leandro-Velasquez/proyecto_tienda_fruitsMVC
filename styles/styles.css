@@ -326,7 +326,7 @@ body{
 
 }
 .section-deal-month__div1 {
-    height: 70vh;
+    height: 65vh;
     position: relative;
 }
 .section-deal-month__img {
@@ -355,6 +355,63 @@ body{
     margin: 0;
     margin-bottom: 10px;
 }
+.section-deal-month__div2 {
+    padding: 80px 20px;
+}
+.section-deal-month__h2 {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 45px;
+    line-height: 35px;
+}
+.section-deal-month__span-h2 {
+    color: #519259;
+}
+.section-deal-month__subtitle {
+    margin: 0;
+    text-transform: uppercase;
+}
+.section-deal-month__p {
+    font-size: 15px;
+    line-height: 25px;
+}
+.div-accountant-deal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+.div-accountant-deal__box {
+    width: 82px;
+    padding: 10px 0px;
+    border: 3px solid #519259;
+    text-align: center;
+}
+.div-accountant-deal__span {
+    color: #519259;
+    font-size: 25px;
+    font-weight: 700;
+}
+.div-accountant-deal__p {
+    margin: 0;
+    font-size: 14px;
+}
+.section-deal-month__button {
+    padding: 15px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    background-color: #519259;
+    color: white;
+}
+.section-deal-month__button:hover {
+    background-color: #011527;
+    color: #519259;
+    transition: all .4s;
+}
+.fa-shopping-cart {
+    margin-right: 10px;
+}
+
+
 
 
 
