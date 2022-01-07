@@ -77,3 +77,19 @@
         <a class="section-deal-month__button" href=""><i class="fas fa-shopping-cart"></i>Add to Cart</a>
     </div>
 </section>
+<section class="section-testimonials">
+    <div>
+        <div>
+            <h3>Testimonios</h3>
+        </div>
+    </div>
+</section>
+<section class="section-we-are">
+    <div class="section-we-are__div">
+        <span class="section-we-are__span">Since Year 1999</span>
+        <h2 class="section-we-are__h2">We are <span class="section-we-are__h2-span">FruitsMVC</span></h2>
+        <p class="section-we-are__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse saepe commodi inventore omnis, porro, architecto accusantium dolorum, quos possimus ducimus magnam. Temporibus rerum aliquam blanditiis soluta id error, quibusdam minus.</p>
+        <p class="section-we-are__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate tempora impedit amet!</p>
+        <a class="section-we-are__button" href="">know more</a>
+    </div>
+</section>
