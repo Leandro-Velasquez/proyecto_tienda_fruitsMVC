@@ -445,6 +445,53 @@ body{
     text-decoration: none;
 }
 
+/*ESTILOS SECTION-DISCOUNT(home.php)*/
+.section-discount {
+    padding: 90px 20px;
+    background-color: #f1f1f1;
+}
+.section-discount__div {
+
+}
+.section-discount__h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 33px;
+    font-weight: 900;
+}
+.section-discount__h2-span {
+    color: #519259;
+}
+.section-discount__p {
+    display: flex;
+    margin: 0;
+    margin-bottom: 25px;
+    align-items: center;
+    font-size: 25px;
+}
+.section-discount__p-span1 {
+
+}
+.section-discount__p-span2 {
+    margin: 0px 10px;
+    color: #519259;
+    font-size: 60px;
+    font-weight: 900;
+}
+.section-discount__p-span3 {
+    margin-top: 30px;
+}
+.section-discount__button {
+    padding: 12px 20px;
+    border-radius: 35px;
+    background-color: #519259;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
 
 
 
