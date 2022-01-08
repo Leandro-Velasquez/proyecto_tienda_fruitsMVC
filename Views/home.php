@@ -93,3 +93,10 @@
         <a class="section-we-are__button" href="">know more</a>
     </div>
 </section>
+<section class="section-discount">
+    <div class="section-discount__div">
+        <h2 class="section-discount__h2">December sale is on! with big <span class="section-discount__h2-span">Discount...</span></h2>
+        <p class="section-discount__p"><span class="section-discount__p-span1">Sale!<br>Upto</span><span class="section-discount__p-span2">50%</span>off</p>
+        <a class="section-discount__button" href="">Shop Now</a>
+    </div>
+</section>
