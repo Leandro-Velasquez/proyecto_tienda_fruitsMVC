@@ -100,3 +100,10 @@
         <a class="section-discount__button" href="">Shop Now</a>
     </div>
 </section>
+<section class="section-our-news">
+    <div class="section-our-news__div">
+        <h3 class="section-our-news__h3"><span class="section-our-news__span">Our</span> News</h3>
+        <p class="section-our-news__p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet a, quos aperiam incidunt ut delectus minus sit accusantium!</p>
+    </div>
+    <a class="section-our-news__button" href="">More News</a>
+</section>
