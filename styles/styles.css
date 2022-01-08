@@ -411,6 +411,39 @@ body{
     margin-right: 10px;
 }
 
+/*ESTILOS SECTION-WE-ARE(home.php)*/
+.section-we-are {
+    padding: 80px 20px;
+}
+.section-we-are__div {
+    width: 320px;
+    margin: auto;
+    padding: 20px;
+}
+.section-we-are__span {
+    color: #757272;
+}
+.section-we-are__h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 900;
+}
+.section-we-are__h2-span {
+    color: #519259;
+}
+.section-we-are__p {
+    line-height: 24px;
+}
+.section-we-are__button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 18px;
+    background-color: #519259;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+}
 
 
 
