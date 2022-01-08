@@ -444,6 +444,11 @@ body{
     border-radius: 30px;
     text-decoration: none;
 }
+.section-we-are__button:hover {
+    background-color: #011527;
+    color: #519259;
+    transition: all .4s;
+}
 
 /*ESTILOS SECTION-DISCOUNT(home.php)*/
 .section-discount {
@@ -490,6 +495,74 @@ body{
     font-size: 18px;
     font-weight: 700;
 }
+.section-discount__button:hover {
+    background-color: #011527;
+    color: #519259;
+    transition: all .4s;
+}
+
+/*ESTILOS SECTION-OUR-NEWS(home.php)*/
+.section-our-news {
+    padding: 80px 20px;
+    
+}
+.section-our-news__container {
+    width: 320px;
+    margin: auto;
+    text-align: center;
+}
+.section-our-news__container > :nth-child(3) {
+    
+}
+.section-our-news__h3 {
+    padding-bottom: 15px;
+    position: relative;
+    font-size: 25px;
+}
+.section-our-news__h3::after {
+    content: "";
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    border: 1px solid #519259;
+}
+.section-our-news__span {
+    color: #519259;
+}
+.section-our-news__p {
+    color: #807e7e;
+    line-height: 26px;
+}
+.section-our-news__button {
+    padding: 12px 18px;
+    border-radius: 30px;
+    color: white;
+    background-color: #519259;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+.section-our-news__button:hover {
+    background-color: #011527;
+    color: #519259;
+    transition: all .4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
