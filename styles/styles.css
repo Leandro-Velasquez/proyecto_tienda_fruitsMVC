@@ -332,6 +332,10 @@ body{
 .section-deal-month {
 
 }
+.section-deal-month__container {
+    display: flex;
+    flex-direction: column;
+}
 .section-deal-month__div1 {
     height: 65vh;
     position: relative;
@@ -349,7 +353,8 @@ body{
     align-items: center;
     position: absolute;
     top: 10%;
-    left: 25%;
+    left: 45%;
+    transform: translateX(-45%);
     background-color: #519259;
     border-radius: 50%;
     outline: 6px solid #78c080;
@@ -383,6 +388,7 @@ body{
     line-height: 25px;
 }
 .div-accountant-deal {
+    width: 370px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 45px;
@@ -580,6 +586,12 @@ body{
         margin: auto;
     }
 }
+@media screen and (min-width: 520px) {
+    .section-deal-month__div2 {
+        width: 480px;
+        margin: auto;
+    }
+}
 @media screen and (min-width: 650px) {
     .container-service {
         max-width: 570px;
@@ -614,10 +626,18 @@ body{
     .section-our-products__h2 {
         font-size: 45px;
     }
+    .section-deal-month__div2 {
+        width: 600px;
+        margin: auto;
+    }
 }
 @media screen and (min-width: 900px) {
     .container-service {
         max-width: 840px;
+    }
+    .section-deal-month__div2 {
+        width: 800px;
+        margin: auto;
     }
 }
 @media screen and (min-width: 990px) {
@@ -679,6 +699,34 @@ body{
     .menu__item-button {
         display: none;
     }
+    .section-deal-month {
+        background-color: #f0f0f0;
+    }
+    .section-deal-month__container {
+        width: 970px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .section-deal-month__div1 {
+        width: 500px;
+        height: inherit;
+        position: relative;
+    }
+    .section-deal-month__img {
+        height: 450px;
+    }
+    .section-deal-month__div2 {
+        width: 470px;
+        padding: 20px 20px;
+        padding-top: 50px;
+    }
+    .div-accountant-deal {
+        width: 370px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 45px;
+    }
 }
 @media screen and (min-width: 1140px) {
     .container-service {
@@ -692,7 +740,7 @@ body{
     .header-div__h1 {
         width: 700px;
         margin: auto;
-        margin-bottom: 30px;
+        margin-bottom: 70px;
         font-size: 75px;
     }
 }

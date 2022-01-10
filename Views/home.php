@@ -45,36 +45,38 @@
     </div>
 </section>
 <section class="section-deal-month">
-    <div class="section-deal-month__div1">
-        <img class="section-deal-month__img" src="Img/deal-month.jpg" alt="">
-        <div class="offer-poster">
-            <span class="offer-poster__span">30%</span>
-            <p class="offer-poster__p">off per kg</p>
-        </div>
-    </div>
-    <div class="section-deal-month__div2">
-        <h2 class="section-deal-month__h2"><span class="section-deal-month__span-h2">Deal</span> of the month</h2>
-        <span class="section-deal-month__subtitle">hikan strwaberry</span>
-        <p class="section-deal-month__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse, tempora ut nihil labore recusandae veritatis natus, fuga quis quod consequuntur dolore commodi vitae dolorum id, dicta molestiae eveniet cupiditate!</p>
-        <div class="div-accountant-deal">
-            <div class="div-accountant-deal__box">
-                <span class="div-accountant-deal__span">8425</span>
-                <p class="div-accountant-deal__p">Days</p>
-            </div>
-            <div class="div-accountant-deal__box">
-                <span class="div-accountant-deal__span">06</span>
-                <p class="div-accountant-deal__p">Hours</p>
-            </div>
-            <div class="div-accountant-deal__box">
-                <span class="div-accountant-deal__span">42</span>
-                <p class="div-accountant-deal__p">Mins</p>
-            </div>
-            <div class="div-accountant-deal__box">
-                <span class="div-accountant-deal__span">20</span>
-                <p class="div-accountant-deal__p">Secs</p>
+    <div class="section-deal-month__container">
+        <div class="section-deal-month__div1">
+            <img class="section-deal-month__img" src="Img/deal-month.jpg" alt="">
+            <div class="offer-poster">
+                <span class="offer-poster__span">30%</span>
+                <p class="offer-poster__p">off per kg</p>
             </div>
         </div>
-        <a class="section-deal-month__button" href=""><i class="fas fa-shopping-cart"></i>Add to Cart</a>
+        <div class="section-deal-month__div2">
+            <h2 class="section-deal-month__h2"><span class="section-deal-month__span-h2">Deal</span> of the month</h2>
+            <span class="section-deal-month__subtitle">hikan strwaberry</span>
+            <p class="section-deal-month__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse, tempora ut nihil labore recusandae veritatis natus, fuga quis quod consequuntur dolore commodi vitae dolorum id, dicta molestiae eveniet cupiditate!</p>
+            <div class="div-accountant-deal">
+                <div class="div-accountant-deal__box">
+                    <span class="div-accountant-deal__span">8425</span>
+                    <p class="div-accountant-deal__p">Days</p>
+                </div>
+                <div class="div-accountant-deal__box">
+                    <span class="div-accountant-deal__span">06</span>
+                    <p class="div-accountant-deal__p">Hours</p>
+                </div>
+                <div class="div-accountant-deal__box">
+                    <span class="div-accountant-deal__span">42</span>
+                    <p class="div-accountant-deal__p">Mins</p>
+                </div>
+                <div class="div-accountant-deal__box">
+                    <span class="div-accountant-deal__span">20</span>
+                    <p class="div-accountant-deal__p">Secs</p>
+                </div>
+            </div>
+            <a class="section-deal-month__button" href=""><i class="fas fa-shopping-cart"></i>Add to Cart</a>
+        </div>
     </div>
 </section>
 <section class="section-testimonials">
