@@ -600,6 +600,9 @@ body{
         max-width: 570px;
         justify-content: space-between;
     }
+    .section-our-news__container {
+        width: 480px;
+    }
 }
 @media screen and (min-width: 764px){
     .header {
@@ -636,6 +639,13 @@ body{
     .section-we-are__div {
         width: 680px;
     }
+    .section-our-news__container {
+        width: 580px;
+    }
+    .section-our-news__h3 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
 }
 @media screen and (min-width: 900px) {
     .container-service {
@@ -644,6 +654,9 @@ body{
     .section-deal-month__div2 {
         width: 800px;
         margin: auto;
+    }
+    .section-our-news__container {
+        width: 680px;
     }
 }
 @media screen and (min-width: 990px) {
