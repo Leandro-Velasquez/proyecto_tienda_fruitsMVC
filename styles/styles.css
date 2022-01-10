@@ -736,10 +736,20 @@ body{
     .section-we-are__div {
         width: 880px;
     }
+    .section-discount {
+        background: linear-gradient(rgba(5, 7, 12, 0.15), rgba(5, 7, 12, 0.15)), url("../Img/discount.jpg") no-repeat;
+        background-size: cover;
+    }
+    .section-discount__div {
+        margin-left: 30px;
+    }
 }
 @media screen and (min-width: 1140px) {
     .container-service {
         max-width: 1000px;
+    }
+    .section-discount__div {
+        margin-left: 70px;
     }
 }
 @media screen and (min-width: 1200px) {
