@@ -591,6 +591,9 @@ body{
         width: 480px;
         margin: auto;
     }
+    .section-we-are__div {
+        width: 480px;
+    }
 }
 @media screen and (min-width: 650px) {
     .container-service {
@@ -629,6 +632,9 @@ body{
     .section-deal-month__div2 {
         width: 600px;
         margin: auto;
+    }
+    .section-we-are__div {
+        width: 680px;
     }
 }
 @media screen and (min-width: 900px) {
@@ -726,6 +732,9 @@ body{
         display: flex;
         justify-content: space-between;
         margin-bottom: 45px;
+    }
+    .section-we-are__div {
+        width: 880px;
     }
 }
 @media screen and (min-width: 1140px) {
