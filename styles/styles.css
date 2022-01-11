@@ -35,6 +35,7 @@ body{
     background-color: #519259;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 .fa-bars {
     display: inline-flex;
@@ -95,7 +96,7 @@ body{
 }
 
 .header-div {
-    margin-top: 100px;
+    padding-top: 120px;
     text-align: center;
     color: white;
 }
@@ -169,7 +170,6 @@ body{
     border: 1px solid #519259;
 }
 .container-flex-items__p {
-    text-align: center;
     color: #adadad;
     font-size: 14px;
     line-height: 25px;
@@ -681,6 +681,19 @@ body{
     }
 }
 @media screen and (min-width: 990px) {
+    .header {
+        padding-top: 20px;
+    }
+    .header-div {
+        margin: 0;
+        padding-top: 150px;
+    }
+    .nav {
+        width: 880px;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+    }
     .btn-menu {
         display: none;
     }
@@ -689,7 +702,7 @@ body{
     }
     .menu {
         display: flex;
-        width: 500px;
+        width: 540px;
         position: relative;
         padding: 0;
         background-color: inherit;
@@ -810,6 +823,9 @@ body{
     }
 }
 @media screen and (min-width: 1140px) {
+    .nav {
+        width: 1080px;
+    }
     .container-service {
         max-width: 1000px;
     }
@@ -819,7 +835,8 @@ body{
 }
 @media screen and (min-width: 1200px) {
     .header-div {
-        margin-top: 40px;
+        margin: 0;
+        padding-top: 130px;
     }
     .header-div__h1 {
         width: 700px;
