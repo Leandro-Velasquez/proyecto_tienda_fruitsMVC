@@ -79,6 +79,7 @@
                 </form>
             </div>
         </div>
+        <div class="footer__border"></div>
         <div class="div-social">
             <p class="container-flex-items__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <ul class="div-social__ul">
