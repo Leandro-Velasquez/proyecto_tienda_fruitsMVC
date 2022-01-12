@@ -13,9 +13,17 @@ body{
     height: 100vh;
 }
 .nav {
-    position: relative;
+    /*position: relative;*/
+    width: 100%;
+    top: 0;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
 }
 .nav__div1 {
+    position: relative;
+    padding: 5px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,9 +57,10 @@ body{
     display: none;
     position: absolute;
     top: 80%;
+    left: 0;
     width: 100%;
     padding: 0;
-    background-color: #011527;
+    background-color: inherit;
     list-style-type: none;
 }
 .menu__item {
@@ -61,6 +70,7 @@ body{
     padding-left: 10px;
     border-bottom: 1px solid #FAEDF0;
     text-transform: uppercase;
+    background-color: #011527;
 }
 .menu__item--modified{
     padding: 0;
@@ -91,8 +101,13 @@ body{
 .fa-plus {
     color: white;
 }
+.menu__div1 {
+    padding: 0 15px;
+    background-color: inherit;
+}
 .menu__div2 {
-    
+    padding: 0 15px;
+    background-color: inherit;
 }
 
 .header-div {
@@ -140,7 +155,7 @@ body{
 
 /*ESTILOS FOOTER*/
 .footer {
-    padding: 50px 0px;
+    padding-top: 50px;
     color: white;
     background-color: #011527;
 }
@@ -682,17 +697,25 @@ body{
 }
 @media screen and (min-width: 990px) {
     .header {
+        padding: 0;
         padding-top: 20px;
     }
     .header-div {
         margin: 0;
+        padding: 0 40px;
         padding-top: 150px;
     }
     .nav {
-        width: 880px;
+        /*width: 880px;*/
+        width: 100%;
+        top: 0;
         position: fixed;
         left: 50%;
         transform: translateX(-50%);
+        z-index: 100;
+    }
+    .nav__div1 {
+        padding: 5px 30px;
     }
     .btn-menu {
         display: none;
@@ -720,6 +743,7 @@ body{
         display: none;
     }
     .menu__item {
+        background-color: inherit;
         border: none;
     }
     .menu__div1-a, .menu__div2-a {
@@ -824,7 +848,8 @@ body{
 }
 @media screen and (min-width: 1140px) {
     .nav {
-        width: 1080px;
+        /*width: 1080px;*/
+        width: 100%;
     }
     .container-service {
         max-width: 1000px;
@@ -876,4 +901,8 @@ body{
 /*ESTILOS JAVASCRIPT*/
 .mostrar-menu {
     display: block;
+}
+.abajo {
+    background-color: #011527;
+    transition: all .4s;
 }
