@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 body{
     font-family: sans-serif;
     box-sizing: border-box;
@@ -593,8 +594,63 @@ body{
 
 
 
+/*ESTILOS PANEL DE ADMINISTRACION*/
+.header-adm {
+    position: fixed;
+    width: 100%;
+}
+.nav-adm {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5px;
+    background-color: #0d375c;
+}
+.nav-adm__p {
+    margin: 0;
+    font-size: 25px;
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+.nav-adm__p::first-letter {
+    font-size: 34px;
+}
+.nav-adm__btn-menu {
 
+}
+.nav-adm__i {
+    color: white;
+}
+.menu-adm {
+    top: 75px;
+    padding: 0;
+    margin: 0;
+    background-color: #0d375c;
+    list-style-type: none;
+}
+.menu-adm__item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.menu-adm__enlace {
+    display: block;
+    padding: 15px 0px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu-adm__enlace:hover {
+    background-color: #072a49;
+    transition: all .4s;
+}
 
+.container-adm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #154772;
+}
 
 
 
