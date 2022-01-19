@@ -17,6 +17,12 @@ class Controller{
         extract($datosModel);
         require 'Views/'.$nombreView.'.php';
     }
+
+    public function cargarTemplatePanelAdm($nombreView, $datosModel = array()){
+        $this->datos = $datosModel;
+        require 'Views/template_panel_adm.php';
+    }
+
 }
 
 ?>
