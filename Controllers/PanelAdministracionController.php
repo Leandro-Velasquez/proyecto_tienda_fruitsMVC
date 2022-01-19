@@ -6,7 +6,9 @@ class PanelAdministracionController extends Controller{
         $this->cargarTemplatePanelAdm('home_panel_adm');
     }
 
-    
+    public function administrarProductos(){
+        $this->cargarTemplatePanelAdm('administrar_productos');
+    }
 }
 
 ?>
