@@ -7,7 +7,9 @@ class PanelAdministracionController extends Controller{
     }
 
     public function administrarProductos(){
-        $this->cargarTemplatePanelAdm('administrar_productos');
+        $p = new ProductosModel();
+        $productos = $p->getProductosCodeNamePrice();
+        $this->cargarTemplatePanelAdm('administrar_productos', array(), $productos);
     }
 }
 
