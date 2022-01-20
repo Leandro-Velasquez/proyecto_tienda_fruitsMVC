@@ -35,7 +35,7 @@
             </div>
         </nav>
 <?php
-    $this->cargarViewEnTemplate($nombreView, $datosModel);
+    $this->cargarViewEnTemplate($nombreView, $datosModel, $datosVariosArrays);
 ?>
     <!--FOOTER-->
     <footer class="footer">
