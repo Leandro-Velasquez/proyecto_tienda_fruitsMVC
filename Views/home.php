@@ -40,7 +40,22 @@
         <p class="section-our-products__p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, impedit natus nihil. Architecto, tenetur sit!</p>
     </div>
     <div class="section-our-products__div-products">
-        <h2>Falta realizar esta parte</h2>
+        <?php
+        for($i = 0; $i < 3; $i++)
+        {
+            ?>
+            <div class="section-our-products__producto">
+                <img class="producto-img" src="<?php echo $datosVariosArrays[$i]['imagen'];?>" alt="">
+                <div>
+                    <h3><?php echo $datosVariosArrays[$i]['nombre'];?></h3>
+                    <p class="producto-p">Per Kg</p>
+                    <span class="producto-precio"><?php echo '$'.$datosVariosArrays[$i]['precio'];?></span>
+                </div>
+                <a href=""></a>
+            </div>
+            <?php
+        }
+        ?>
         <!--Para esta parte vamos a usar php-->
     </div>
 </section>
