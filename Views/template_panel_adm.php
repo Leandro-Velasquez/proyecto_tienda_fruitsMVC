@@ -22,9 +22,11 @@
         </nav>
     </header>
     <div class="container-adm">
-        <?php
-        $this->cargarViewEnTemplate($nombreView, $datosModel);
-        ?>
+        <div class="container-adm__div">
+            <?php
+            $this->cargarViewEnTemplate($nombreView, $datosModel, $datosVariosArrays);
+            ?>
+        </div>
     </div>
     <script src="http://localhost/proyecto_tienda_fruitsMVC/scripts/scripts.js"></script>
 </body>
