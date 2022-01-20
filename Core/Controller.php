@@ -10,8 +10,9 @@ class Controller{
         $this->datosVariosArrays = array();
     }
 
-    public function cargarTemplate($nombreView, $datosModel = array()){
+    public function cargarTemplate($nombreView, $datosModel = array(), $datosVariosArrays = array()){
         $this->datos = $datosModel;
+        $this->datosVariosArrays = $datosVariosArrays;
         require 'Views/template.php';
     }
 
