@@ -330,6 +330,7 @@ body{
 .section-our-products__div {
     width: 340px;
     margin: auto;
+    margin-bottom: 50px;
     text-align: center;
 }
 .section-our-products__h2 {
@@ -355,17 +356,26 @@ body{
 }
 .section-our-products__div-products {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .section-our-products__producto {
     width: 360px;
+    margin-bottom: 30px;
+    padding: 70px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
+    border-radius: 5px;
+}
+.section-our-products__producto:hover {
+    background-color: #f5f5f5;
+    transition: all .4s;
 }
 .producto-img {
     width: 150px;
+    height: 140px;
 }
 .producto-p {
     text-align: center;
@@ -373,10 +383,25 @@ body{
 }
 .producto-precio {
     display: block;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 29px;
     font-weight: 700;
 }
+.producto-button {
+    padding: 15px 20px;
+    border-radius: 50px;
+    background-color: #519259;
+    color: white;
+    text-decoration: none;
+}
+.producto-button:hover {
+    background-color: #011527;
+    color: #519259;
+    transition: all .4s;
+}
+
+
 /*ESTILOS DEAL-MONTH(home.php)*/
 .section-deal-month {
 
@@ -704,6 +729,9 @@ body{
     .section-we-are__div {
         width: 480px;
     }
+    .section-our-products__producto {
+        width: 400px;
+    }
 }
 @media screen and (min-width: 580px) {
     .container-flex-items {
@@ -717,6 +745,16 @@ body{
     }
     .section-our-news__container {
         width: 480px;
+    }
+}
+@media screen and (min-width: 720px){
+    .section-our-products__div-products {
+        width: 600px;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .section-our-products__producto {
+        width: 280px;
     }
 }
 @media screen and (min-width: 764px){
@@ -768,6 +806,12 @@ body{
     }
     .container-flex-items__item1, .container-flex-items__item2, .container-flex-items__item3, .container-flex-items__item4 {
         width: 250px;
+    }
+    .section-our-products__div-products {
+        width: 720px;
+    }
+    .section-our-products__producto {
+        width: 340px;
     }
 }
 @media screen and (min-width: 900px) {
@@ -932,6 +976,20 @@ body{
     .div-social__ul {
         margin: 0px;
     }
+    .section-our-products__div-products {
+        width: 900px;
+    }
+    .section-our-products__producto {
+        width: 400px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .section-our-products__div-products{
+        width: 950px;
+    }
+    .section-our-products__producto {
+        width: 290px;
+    }
 }
 @media screen and (min-width: 1140px) {
     .nav {
@@ -943,6 +1001,12 @@ body{
     }
     .section-discount__div {
         margin-left: 70px;
+    }
+    .section-our-products__div-products{
+        width: 1080px;
+    }
+    .section-our-products__producto{
+        width: 320px;
     }
 }
 @media screen and (min-width: 1200px) {

@@ -51,7 +51,7 @@
                     <p class="producto-p">Per Kg</p>
                     <span class="producto-precio"><?php echo '$'.$datosVariosArrays[$i]['precio'];?></span>
                 </div>
-                <a href=""></a>
+                <a class="producto-button" href=""><i class="fas fa-shopping-cart"></i>Add to Cart</a>
             </div>
             <?php
         }
