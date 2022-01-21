@@ -56,7 +56,6 @@
             <?php
         }
         ?>
-        <!--Para esta parte vamos a usar php-->
     </div>
 </section>
 <section class="section-deal-month">
@@ -96,9 +95,38 @@
 </section>
 <section class="section-testimonials">
     <div>
-        <div>
-            <h3>Testimonios</h3>
-        </div>
+        <ul class="section-testimonials__ul">
+            <li class="section-testimonials__li">
+                <img class="section-testimonials__img" src="http://localhost/proyecto_tienda_fruitsMVC/Img/testimonios/img_testimonio1.jpg" alt="">
+                <div>
+                    <h3 class="section-testimonials__h3">Jacob Sikim</h3>
+                    <span class="section-testimonials__span">Local shop owner</span>
+                </div>
+                <div>
+                    <p class="section-testimonials__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur beatae autem optio impedit! Deserunt aperiam quisquam distinctio alias neque sapiente.</p>
+                </div>
+            </li>
+            <li class="section-testimonials__li">
+                <img class="section-testimonials__img" src="http://localhost/proyecto_tienda_fruitsMVC/Img/testimonios/img_testimonio2.jpg" alt="">
+                <div>
+                    <h3 class="section-testimonials__h3">David Niph</h3>
+                    <span class="section-testimonials__span">Local shop owner</span>
+                </div>
+                <div>
+                    <p class="section-testimonials__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur beatae autem optio impedit! Deserunt aperiam quisquam distinctio alias neque sapiente.</p>
+                </div>
+            </li>
+            <li class="section-testimonials__li">
+                <img class="section-testimonials__img" src="http://localhost/proyecto_tienda_fruitsMVC/Img/testimonios/img_testimonio3.jpg" alt="">
+                <div>
+                    <h3 class="section-testimonials__h3">Saira Hakim</h3>
+                    <span class="section-testimonials__span">Local shop owner</span>
+                </div>
+                <div>
+                    <p class="section-testimonials__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur beatae autem optio impedit! Deserunt aperiam quisquam distinctio alias neque sapiente.</p>
+                </div>
+            </li>
+        </ul>
     </div>
 </section>
 <section class="section-we-are">
