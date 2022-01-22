@@ -96,37 +96,51 @@
 <section class="section-testimonials">
     <div>
         <ul class="section-testimonials__ul">
-            <li class="section-testimonials__li">
-                <img class="section-testimonials__img" src="http://localhost/proyecto_tienda_fruitsMVC/Img/testimonios/img_testimonio1.jpg" alt="">
+            <li class="section-testimonials__li section-testimonials__li--modified">
+                <div class="section-testimonials__div-img">
+                    <img class="section-testimonials__img" src="http://localhost/proyecto_tienda_fruitsMVC/Img/testimonios/img_testimonio1.jpg" alt="">
+                </div>
                 <div>
                     <h3 class="section-testimonials__h3">Jacob Sikim</h3>
                     <span class="section-testimonials__span">Local shop owner</span>
                 </div>
                 <div>
-                    <p class="section-testimonials__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur beatae autem optio impedit! Deserunt aperiam quisquam distinctio alias neque sapiente.</p>
+                    <p class="section-testimonials__p">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur beatae autem optio impedit! Deserunt aperiam quisquam distinctio alias neque sapiente."</p>
+                    <i class="fas fa-quote-right"></i>
                 </div>
             </li>
             <li class="section-testimonials__li">
-                <img class="section-testimonials__img" src="http://localhost/proyecto_tienda_fruitsMVC/Img/testimonios/img_testimonio2.jpg" alt="">
+                <div class="section-testimonials__div-img">
+                    <img class="section-testimonials__img" src="http://localhost/proyecto_tienda_fruitsMVC/Img/testimonios/img_testimonio2.jpg" alt="">
+                </div>
                 <div>
                     <h3 class="section-testimonials__h3">David Niph</h3>
                     <span class="section-testimonials__span">Local shop owner</span>
                 </div>
                 <div>
-                    <p class="section-testimonials__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur beatae autem optio impedit! Deserunt aperiam quisquam distinctio alias neque sapiente.</p>
+                    <p class="section-testimonials__p">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur beatae autem optio impedit! Deserunt aperiam quisquam distinctio alias neque sapiente."</p>
+                    <i class="fas fa-quote-right"></i>
                 </div>
             </li>
             <li class="section-testimonials__li">
-                <img class="section-testimonials__img" src="http://localhost/proyecto_tienda_fruitsMVC/Img/testimonios/img_testimonio3.jpg" alt="">
+                <div class="section-testimonials__div-img">
+                    <img class="section-testimonials__img" src="http://localhost/proyecto_tienda_fruitsMVC/Img/testimonios/img_testimonio3.jpg" alt="">
+                </div>
                 <div>
                     <h3 class="section-testimonials__h3">Saira Hakim</h3>
                     <span class="section-testimonials__span">Local shop owner</span>
                 </div>
                 <div>
-                    <p class="section-testimonials__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur beatae autem optio impedit! Deserunt aperiam quisquam distinctio alias neque sapiente.</p>
+                    <p class="section-testimonials__p">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur beatae autem optio impedit! Deserunt aperiam quisquam distinctio alias neque sapiente."</p>
+                    <i class="fas fa-quote-right"></i>
                 </div>
             </li>
         </ul>
+        <div class="section-testimonials__menu-buttons">
+            <div id="testimonials-button1" class="section-testimonials__buttons"></div>
+            <div id="testimonials-button2" class="section-testimonials__buttons"></div>
+            <div id="testimonials-button3" class="section-testimonials__buttons"></div>
+        </div>
     </div>
 </section>
 <section class="section-we-are">

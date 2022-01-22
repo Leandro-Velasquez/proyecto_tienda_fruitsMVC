@@ -404,7 +404,7 @@ body{
 
 /*ESTILOS DEAL-MONTH(home.php)*/
 .section-deal-month {
-
+    background-color: #f0f0f0;
 }
 .section-deal-month__container {
     display: flex;
@@ -500,14 +500,24 @@ body{
 
 /*ESTILOS SECTION-TESTIMONIALS*/
 .section-testimonials{
-
+    padding: 60px 0px;
 }
 .section-testimonials__ul {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 50px;
     padding: 0;
+    display: flex;
     list-style-type: none;
+    overflow: hidden;
 }
 .section-testimonials__li {
-
+    width: inherit;
+    flex-shrink: 0;
+}
+.section-testimonials__div-img {
+    display: flex;
+    justify-content: center;
 }
 .section-testimonials__img {
     height: 100px;
@@ -515,6 +525,39 @@ body{
     border-radius: 50px;
     object-fit: cover;
 }
+.section-testimonials__h3 {
+    text-align: center;
+}
+.section-testimonials__span {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    color: #757272;
+}
+.section-testimonials__p {
+    text-align: center;
+    color: #807e7e;
+}
+.fa-quote-right {
+    display: block;
+    color: #807e7e;
+    font-size: 25px;
+    text-align: center;
+}
+.section-testimonials__menu-buttons {
+    width: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.section-testimonials__buttons {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #9c9c9c;
+    cursor: pointer;
+}
+
 
 
 
@@ -1073,6 +1116,12 @@ body{
 /*ESTILOS JAVASCRIPT*/
 .mostrar-menu {
     display: block;
+}
+.mostrar-testimonio {
+    order: -1;
+}
+.ocultar-testimonio {
+    order: 0;
 }
 .abajo {
     background-color: #011527;
