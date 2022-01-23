@@ -798,6 +798,7 @@ body{
     padding: 5px 10px;
     border: none;
     background-color: #519259;
+    cursor: pointer;
 }
 .productos-en-stock__buttons:nth-child(1) {
     margin-right: 8px;

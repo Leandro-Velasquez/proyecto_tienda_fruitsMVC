@@ -29,7 +29,7 @@
         </tbody>
     </table>
     <div class="productos-en-stock__div-buttons">
-        <button class="productos-en-stock__buttons"><i class="fas fa-arrow-left"></i></button>
-        <button class="productos-en-stock__buttons"><i class="fas fa-arrow-right"></i></button>
+        <button id="buttonLeft" class="productos-en-stock__buttons"><i class="fas fa-arrow-left"></i></button>
+        <button id="buttonRight" class="productos-en-stock__buttons"><i class="fas fa-arrow-right"></i></button>
     </div>
 </div>

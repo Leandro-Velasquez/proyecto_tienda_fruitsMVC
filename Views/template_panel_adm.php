@@ -16,8 +16,8 @@
             <ul class="menu-adm menu">
                 <li class="menu-adm__item"><a class="menu-adm__enlace" href="http://localhost/proyecto_tienda_fruitsMVC/PanelAdministracion">Inicio</a></li>
                 <li class="menu-adm__item"><a class="menu-adm__enlace" href="http://localhost/proyecto_tienda_fruitsMVC/PanelAdministracion/administrarProductos">Administrar productos</a></li>
-                <li class="menu-adm__item"><a class="menu-adm__enlace" href="modificar_testimonios.php">Modificar testimonios</a></li>
                 <li class="menu-adm__item"><a class="menu-adm__enlace" href="administrar_noticias.php">Administrar noticias</a></li>
+                <li class="menu-adm__item"><a class="menu-adm__enlace" href="modificar_testimonios.php">Modificar testimonios</a></li>
             </ul>
         </nav>
     </header>
@@ -28,6 +28,6 @@
             ?>
         </div>
     </div>
-    <script src="http://localhost/proyecto_tienda_fruitsMVC/scripts/scripts.js"></script>
+    <script src="http://localhost/proyecto_tienda_fruitsMVC/scripts/mainPanelAdm.js"></script>
 </body>
 </html>
