@@ -1,3 +1,10 @@
+const btnMenu = document.querySelector('.btn-menu');
+const menu = document.querySelector('.menu');
+btnMenu.addEventListener('click', () => {
+    menu.classList.toggle('mostrar-menu');
+})
+
+
 const menuButtons = document.querySelector('.productos-en-stock__div-buttons');
 const buttonLeft = document.getElementById('buttonLeft');
 const buttonRight = document.getElementById('buttonRight');
