@@ -8,12 +8,13 @@
                 <th class="productos-en-stock__th">Precio</th>
             </tr>
         </thead>
-        <tbody>
-            <?php
+        <tbody class="productos-en-stock__tbody">
+        <?php
+        /*
             for($i = 0; $i < count($datosVariosArrays); $i++)
             {
                 ?>
-                <tr>
+                <tr class="productos-en-stock__tr">
                     <?php
                     foreach($datosVariosArrays[$i] as $key => $value)
                     {
@@ -25,11 +26,14 @@
                 </tr>
                 <?php
             }
-            ?>
+        */
+        ?>
         </tbody>
     </table>
     <div class="productos-en-stock__div-buttons">
-        <button id="buttonLeft" class="productos-en-stock__buttons"><i class="fas fa-arrow-left"></i></button>
-        <button id="buttonRight" class="productos-en-stock__buttons"><i class="fas fa-arrow-right"></i></button>
+        <!-- <button id="buttonLeft" class="productos-en-stock__buttons"><i class="fas fa-arrow-left"></i></button>
+        <button id="buttonRight" class="productos-en-stock__buttons"><i class="fas fa-arrow-right"></i></button> -->
+        <a id="buttonLeft" class="productos-en-stock__buttons" href=""><i class="fas fa-arrow-left"></i></a>
+        <a id="buttonRight" class="productos-en-stock__buttons" href=""><i class="fas fa-arrow-right"></i></a>
     </div>
 </div>
