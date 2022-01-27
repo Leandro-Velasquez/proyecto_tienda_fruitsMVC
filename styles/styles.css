@@ -1167,3 +1167,10 @@ body{
     background-color: #011527;
     transition: all .4s;
 }
+.deshabilitar-boton {
+    background-color: #9c9c9c;
+}
+.deshabilitar-boton:hover {
+    background-color: inherit;
+    transition: none;
+}
