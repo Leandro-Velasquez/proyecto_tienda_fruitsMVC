@@ -72,3 +72,20 @@ const traerRegistros = (registrosXPagina, indice) => {
     });
     xml.send(`registrosXPagina=${registrosXPagina}&indice=${indice}`);
 }
+
+const mostrarRegistros = (registros) => {
+    const fragment = document.createDocumentFragment();
+    for(registro in registros)
+    {
+        const tr = document.createElement('tr');
+        for(valor in registros[registro])
+        {
+            const td = document.createElement('td');
+            td.textContent = registros[registro][valor];
+            tr.appendChild(td);
+        }
+        fragment.appendChild(tr);
+    }
+    const tBody = document.querySelector('.productos-en-stock__tbody');
+    tBody.appendChild(fragment);
+}
