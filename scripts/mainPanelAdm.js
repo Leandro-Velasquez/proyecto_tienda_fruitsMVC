@@ -89,3 +89,9 @@ const mostrarRegistros = (registros) => {
     const tBody = document.querySelector('.productos-en-stock__tbody');
     tBody.appendChild(fragment);
 }
+
+function removeAllChildNodes(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+}
