@@ -15,3 +15,49 @@ const calcularPaginas = (registrosXPagina) => {
     });
     xml.send('paginas=true');
 }
+
+const botones = (cantidadPaginas, registrosXPagina) => {
+    const botones = document.querySelectorAll('.productos-en-stock__buttons');
+    const tBody = document.querySelector('.productos-en-stock__tbody');
+
+    let indice = 1;
+    traerRegistros(registrosXPagina, 0);
+
+    botones.forEach(boton => {
+        boton.addEventListener('click', e => {
+            e.preventDefault();
+            if(boton.id == 'buttonLeft')
+            {
+                removeAllChildNodes(tBody);
+                indice -= 1;
+                if(indice > 0)
+                {
+                    let indiceRegistros = (indice - 1) * registrosXPagina;
+                    traerRegistros(registrosXPagina, indiceRegistros);
+                }
+                else
+                {
+                    indice = 1;
+                    let indiceRegistros = (indice - 1) * registrosXPagina;
+                    traerRegistros(registrosXPagina, indiceRegistros);
+                }
+            }
+            else if(boton.id == 'buttonRight')
+            {
+                removeAllChildNodes(tBody);
+                indice += 1;
+                if(indice <= cantidadPaginas)
+                {
+                    let indiceRegistros = (indice - 1) * registrosXPagina;
+                    traerRegistros(registrosXPagina, indiceRegistros);
+                }
+                else
+                {
+                    indice = cantidadPaginas;
+                    let indiceRegistros = (indice - 1) * registrosXPagina;
+                    traerRegistros(registrosXPagina, indiceRegistros);
+                }
+            }
+        })
+    });
+}
