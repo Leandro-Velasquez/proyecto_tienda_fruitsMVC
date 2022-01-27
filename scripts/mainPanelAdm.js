@@ -61,3 +61,14 @@ const botones = (cantidadPaginas, registrosXPagina) => {
         })
     });
 }
+
+const traerRegistros = (registrosXPagina, indice) => {
+    const xml = new XMLHttpRequest();
+    xml.open('POST', '../Models/Ajax.php');
+    xml.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+    xml.addEventListener('load', () => {
+        const registros =JSON.parse(xml.responseText);
+        mostrarRegistros(registros);
+    });
+    xml.send(`registrosXPagina=${registrosXPagina}&indice=${indice}`);
+}
