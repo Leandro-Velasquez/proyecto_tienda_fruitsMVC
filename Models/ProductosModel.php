@@ -37,6 +37,14 @@ class ProductosModel{
         $sql->execute();
         return $sql->fetchall(PDO::FETCH_ASSOC);
     }
+
+    public function getProducto($numeroDeRegistro)
+    {
+        $sql = $this->con->prepare("SELECT * FROM productos LIMIT :numeroDeRegistro,1");
+        $sql->bindParam(':numeroDeRegistro', $numeroDeRegistro, PDO::PARAM_INT);
+        $sql->execute();
+        return $sql->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
 
 ?>
