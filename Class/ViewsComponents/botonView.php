@@ -1,0 +1,1 @@
+<a class="<?php echo $this->getClases(); ?>" href="http://localhost/proyecto_tienda_fruitsMVC/PanelAdministracion/administrarProductos/<?php echo $this->getName() . "" . $this->getValor(); ?>"><?php echo $this->getContenido(); ?></a>
