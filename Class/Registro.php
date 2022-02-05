@@ -4,10 +4,14 @@ class registro
 {
     private $registro;
     private $datos;
+    private $clasesTr;
+    private $clasesTd;
 
-    public function __construct($registro = array())
+    public function __construct($registro = array(), $clasesTr = "", $clasesTd = "")
     {
         $this->datos = $registro;
+        $this->clasesTr = $clasesTr;
+        $this->clasesTd = $clasesTd;
     }
 
     public function armarRegistro()
@@ -17,7 +21,17 @@ class registro
         {
             array_push($campos, "<td>" . $dato . "</td>");
         }
-        $this->registro = "<tr>" . implode("", $campos) ."</tr>";
+        $this->registro = "<tr class=$this->clasesTr>" . implode("", $campos) ."</tr>";
+    }
+
+    public function getClasesTr()
+    {
+        return $this->clasesTr;
+    }
+
+    public function getClasesTd()
+    {
+        return $this->clasesTd;
     }
 
     public function getRegistro()
