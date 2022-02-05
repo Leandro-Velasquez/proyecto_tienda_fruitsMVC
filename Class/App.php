@@ -12,7 +12,7 @@ class App
 
     public function __construct($registrosXPagina, $valorBoton = null)
     {
-        $this->menuBotones = new MenuBotones($valorBoton, 'productos-en-stock__div-buttons');
+        $this->menuBotones = new MenuBotones($registrosXPagina, $valorBoton, 'productos-en-stock__div-buttons');
 
         $this->tabla = new Tabla($this->menuBotones->getNumeroDePagina(), $registrosXPagina, 'productos-en-stock__table', array("codigo_producto", "nombre", "precio"));
 

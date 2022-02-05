@@ -8,15 +8,17 @@ class MenuBotones
     private $numeroDePagina;
     private $botonIzquierdo;
     private $botonDerecho;
+    private $registrosXpagina;
     private $clases;
 
-    public function __construct($valorBoton = null, $clases = "")
+    public function __construct($registrosXPagina, $valorBoton = null, $clases = "")
     {
-        $this->paginas = new Paginas(3);
+        $this->paginas = new Paginas($registrosXPagina);
         $this->botonIzquierdo = new Boton('', -1, '<i class="fas fa-arrow-left"></i>', 'productos-en-stock__buttons');
         $this->botonDerecho = new Boton('', 1, '<i class="fas fa-arrow-right"></i>', 'productos-en-stock__buttons');
         $this->clases = $clases;
         $this->establecerPagina($valorBoton);
+        $this->registrosXpagina = $registrosXPagina;
     }
 
     public function establecerPagina($valorBoton)
