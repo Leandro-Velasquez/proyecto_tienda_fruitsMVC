@@ -1,0 +1,1 @@
+<input class="<?php echo $this->getClases(); ?>" type="file" name="<?php echo $this->getName(); ?>">
