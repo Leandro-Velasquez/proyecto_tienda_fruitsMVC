@@ -8,6 +8,26 @@ class ProductosModel{
         $this->con = Conexion::getConexion();
     }
 
+    public function agregarProducto($arrayDatos)
+    {
+        $sql = $this->con->prepare("INSERT INTO productos VALUES(:codigo, :nombre, :precio, :imagen)");
+
+        $sql->bindParam(":codigo", $arrayDatos['codigo']);
+        $sql->bindParam(":nombre", $arrayDatos['nombre']);
+        $sql->bindParam(":precio", $arrayDatos['precio']);
+        $sql->bindParam(":imagen", $arrayDatos['rutaImagen']);
+        $sql->execute();
+
+        if($sql->rowCount() > 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     public function getProductosSelectAll()
     {
         $sql = $this->con->query("SELECT * FROM productos");
