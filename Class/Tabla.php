@@ -30,10 +30,11 @@ class Tabla
 
     public function colocarRegistrosEnEtiquetasTd()
     {
+        $copiaRegistrosConRegistrosVacios = $this->agregarRegistrosVacios($this->registros);
         $registros = array();
-        foreach($this->registros as $registro)
+        foreach($copiaRegistrosConRegistrosVacios as $registro)
         {
-            $r = new Registro($registro);
+            $r = new Registro($registro, 'productos-en-stock__tr');
             array_push($registros, $r->getRegistro());
         }
         return $registros;
@@ -55,6 +56,26 @@ class Tabla
         }
         $titulosColumnas = "<thead class=$clasesThead><tr>" . $th . "</tr></thead>";
         return $titulosColumnas;
+    }
+
+    public function agregarRegistrosVacios($registros)
+    {
+        $registrosCopia = $registros;
+        while(count($registrosCopia) < $this->cantidadRegistros)
+        {
+            array_push($registrosCopia, $this->generarRegistroVacio($this->registros[0]));
+        }
+        return $registrosCopia;
+    }
+
+    public function generarRegistroVacio($registroMuestra)
+    {
+        $registroVacioGenerado = array();
+        foreach($registroMuestra as $key=>$value)
+        {
+            $registroVacioGenerado[$key] = "";
+        }
+        return $registroVacioGenerado;
     }
 
     public function getClases()
