@@ -2,6 +2,7 @@
 include "InputText.php";
 include "ButtonForm.php";
 include "InputFile.php";
+include "Label.php";
 include "Archivo.php";
 
 class AgregarProductos
@@ -10,6 +11,7 @@ class AgregarProductos
     private $inputCodigoProducto;
     private $inputNombreProducto;
     private $inputPrecioProducto;
+    private $labelSubirArchivo;
     private $inputSubirArchivo;
     private $button;
 
@@ -19,7 +21,8 @@ class AgregarProductos
         $this->inputCodigoProducto = new InputText("codigo", "Codigo del producto", "agregar-productos__input");
         $this->inputNombreProducto = new InputText("nombre", "Nombre producto", "agregar-productos__input");
         $this->inputPrecioProducto = new InputText("precio", "Precio producto", "agregar-productos__input");
-        $this->inputSubirArchivo = new InputFile("imagen", "agregar-productos__input-file");
+        $this->labelSubirArchivo = new Label("Seleccionar Imagen", "imagen", "agregar-productos__label-file");
+        $this->inputSubirArchivo = new InputFile("imagen", "agregar-productos__input-file", $this->labelSubirArchivo);
         $this->button = new ButtonForm("Agregar", "agregar-productos__button");
 
 
