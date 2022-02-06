@@ -4,6 +4,13 @@ btnMenu.addEventListener('click', () => {
     menu.classList.toggle('mostrar-menu');
 })
 
+const inputFile = document.querySelector('.agregar-productos__input-file');
+inputFile.addEventListener('change', () => {
+    document.querySelector('#agregar-productos__span-label-file').textContent = inputFile.files[0].name;
+});
+
+
+
 
 const calcularPaginas = (registrosXPagina) => {
     const xml = new XMLHttpRequest();
