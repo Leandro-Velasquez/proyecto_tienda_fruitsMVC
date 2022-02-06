@@ -1,0 +1,1 @@
+<label class="<?php echo $this->getClases(); ?>" for="<?php echo $this->getValorAtributoFor(); ?>"><?php echo $this->getContenido(); ?></label>
