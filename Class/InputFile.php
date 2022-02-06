@@ -1,13 +1,19 @@
 <?php
+
 class InputFile
 {
     private $name;
     private $clases;
+    private $label;
 
-    public function __construct($name, $clases = "")
+    public function __construct($name, $clases = "", $label= null)
     {
         $this->name = $name;
         $this->clases = $clases;
+        if(!empty($label))
+        {
+            $this->label = $label;
+        }
     }
 
     public function getName()
