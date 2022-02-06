@@ -790,6 +790,9 @@ body{
 .productos-en-stock__th {
 
 }
+.productos-en-stock__tr {
+    height: 20px;
+}
 .productos-en-stock__div-buttons {
     display: flex;
     justify-content: flex-end;
@@ -813,6 +816,73 @@ body{
 .fa-arrow-right {
     color: white;
 }
+
+
+.agregar-productos {
+    width: 380px;
+    margin: auto;
+}
+.agregar-productos__h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: white;
+}
+.agregar-productos__form {
+    display: flex;
+    flex-direction: column;
+}
+.agregar-productos__input {
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    caret-color: #807e7e;
+}
+.agregar-productos__container-label-file {
+    display: flex;
+    margin-bottom: 10px;
+}
+.agregar-productos__label-file {
+    display: inline-block;
+    width: 160px;
+    padding: 18px 9px;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #519259;
+    text-align: center;
+    cursor: pointer;
+}
+.agregar-productos__span-label-file {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.agregar-productos__label-file:hover {
+    background-color: #3d7543;
+    transition: all .4s;
+}
+.agregar-productos__input-file {
+    display: none;
+}
+.agregar-productos__button {
+    height: 35px;
+    background-color: #519259;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.agregar-productos__button:hover {
+    background-color: #3d7543;
+    transition: all .4s;
+}
+
+
+
 
 
 
