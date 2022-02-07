@@ -65,6 +65,14 @@ class ProductosModel{
         $sql->execute();
         return $sql->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function buscarRegistroPorCodigo($codigo)
+    {
+        $sql = $this->con->prepare("SELECT codigo_producto FROM productos WHERE codigo_producto=:c");
+        $sql->bindParam(":c", $codigo, PDO::PARAM_INT);
+        $sql->execute();
+        return $sql->fetch(PDO::FETCH_ASSOC);
+    }
 }
 
 ?>
