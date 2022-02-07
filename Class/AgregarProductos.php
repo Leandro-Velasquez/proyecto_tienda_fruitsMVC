@@ -4,6 +4,7 @@ include "ButtonForm.php";
 include "InputFile.php";
 include "Label.php";
 include "Archivo.php";
+include "Cartel.php";
 
 class AgregarProductos
 {
@@ -55,6 +56,18 @@ class AgregarProductos
     public function agregarImagenALaCarpetaLocal($archivo, $directorioDeDestino)
     {
         move_uploaded_file($archivo->getTmpName(), $directorioDeDestino);
+    }
+
+    public function verificarCamposVacios($arrayDatos)
+    {
+        foreach($arrayDatos as $key=>$value)
+        {
+            if(empty(trim($value)))
+            {
+                $cartel = new Cartel("El campo " . $key . " se encuentra vacio", "agregar-productos__cartel");
+                $cartel->cartelView();
+            }
+        }
     }
 
     public function agregarProductosView()
