@@ -58,6 +58,17 @@ class AgregarProductos
         move_uploaded_file($archivo->getTmpName(), $directorioDeDestino);
     }
 
+    public function verificarCodigoProductoNoSeaRepetido($codigo)
+    {
+        $productosModels = new ProductosModel();
+        $respuesta = $productosModels->buscarRegistroPorCodigo($codigo);
+        if($respuesta)
+        {
+            $cartel = new Cartel("El codigo ingresado ya esta registrado en la base de datos", "agregar-productos__cartel");
+            $cartel->cartelView();
+        }
+    }
+
     public function verificarCamposVacios($arrayDatos)
     {
         foreach($arrayDatos as $key=>$value)
