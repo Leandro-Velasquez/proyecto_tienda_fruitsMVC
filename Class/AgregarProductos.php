@@ -44,6 +44,8 @@ class AgregarProductos
 
             $productosModels->agregarProducto($arrayDatos);
             $this->agregarImagenALaCarpetaLocal($archivo, $directorioDeDestino);
+            $cartel = new Cartel("El producto fue agregado exitosamente", "agregar-productos__cartel-exito");
+            $cartel->cartelView();
         }
     }
 
