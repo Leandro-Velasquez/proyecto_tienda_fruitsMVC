@@ -33,29 +33,38 @@ class AgregarProductos
 
     public function agregarProductoALaBaseDeDatos($arrayDatosPOST, $archivo)
     {
-        $arrayDatosPOST = $arrayDatosPOST;
-        $productosModels = new ProductosModel();
-        $archivo = new Archivo($archivo);
-
-        if($archivo->getTipoArchivo() == "png" || $archivo->getTipoArchivo() == "jpg" || $archivo->getTipoArchivo() == "jpeg")
+        if($this->verificarCamposVacios($arrayDatosPOST) && $this->verificarCodigoProductoNoSeaRepetido($arrayDatosPOST['codigo']) && $this->verificarArchivoImagen($archivo))
         {
-            $directorioDeDestino = "Img/productos/";
-            $directorioDeDestino .= $archivo->getNombreArchivo();
-            $arrayDatosPOST['rutaImagen'] = $directorioDeDestino;
-            if($productosModels->agregarProducto($arrayDatosPOST))
-            {
-                $this->agregarImagenALaCarpetaLocal($archivo, $directorioDeDestino);
-            }
-            else
-            {
-                echo "HUBO UN PROBLEMA AL AGREGAR EL PRODUCTO<br>";
-            }
+            $productosModels = new ProductosModel();
+            $arrayDatos = $arrayDatosPOST;
+
+            $directorioDeDestino = "Img/productos/" . $archivo['name'];
+
+            $arrayDatos['rutaImagen'] = $directorioDeDestino;
+
+            $productosModels->agregarProducto($arrayDatos);
+            $this->agregarImagenALaCarpetaLocal($archivo, $directorioDeDestino);
         }
     }
 
     public function agregarImagenALaCarpetaLocal($archivo, $directorioDeDestino)
     {
-        move_uploaded_file($archivo->getTmpName(), $directorioDeDestino);
+        move_uploaded_file($archivo['tmp_name'], $directorioDeDestino);
+    }
+
+    public function verificarArchivoImagen($archivo)
+    {
+        $archivo = new Archivo($archivo);
+        if($archivo->getTipoArchivo() == "png" || $archivo->getTipoArchivo() == "jpg" || $archivo->getTipoArchivo() == "jpeg")
+        {
+            return true;
+        }
+        else
+        {
+            $cartel = new Cartel("El archivo subido no es una imagen", "agregar-productos__cartel");
+            $cartel->cartelView();
+            return false;
+        }
     }
 
     public function verificarCodigoProductoNoSeaRepetido($codigo)
@@ -66,19 +75,27 @@ class AgregarProductos
         {
             $cartel = new Cartel("El codigo ingresado ya esta registrado en la base de datos", "agregar-productos__cartel");
             $cartel->cartelView();
+            return false;
+        }
+        else
+        {
+            return true;
         }
     }
 
     public function verificarCamposVacios($arrayDatos)
     {
+        $verificarCampos = true;
         foreach($arrayDatos as $key=>$value)
         {
             if(empty(trim($value)))
             {
                 $cartel = new Cartel("El campo " . $key . " se encuentra vacio", "agregar-productos__cartel");
                 $cartel->cartelView();
+                $verificarCampos = false;
             }
         }
+        return $verificarCampos;
     }
 
     public function agregarProductosView()
