@@ -10,9 +10,5 @@
     <?php
     include_once "Class/AgregarProductos.php";
     $agregarProductos = new AgregarProductos("agregar-productos__form");
-    if(isset($_POST['codigo']))
-    {
-        $agregarProductos->agregarProductoALaBaseDeDatos($_POST, $_FILES['imagen']);
-    }
     ?>
 </div>
