@@ -3,6 +3,7 @@
 class Controller{
     public $datos;
     public $datosVariosArrays;
+    public $ubicacionClase;
 
     public function __construct()
     {
@@ -27,7 +28,15 @@ class Controller{
         require 'Views/'.$nombreView.'.php';
     }
 
-    
+    public function getUbicacionClase()
+    {
+        return $this->ubicacionClase;
+    }
+
+    public function setUbicacionClase($ubicacionClase)
+    {
+        $this->ubicacionClase = $ubicacionClase;
+    }
 
 }
 
