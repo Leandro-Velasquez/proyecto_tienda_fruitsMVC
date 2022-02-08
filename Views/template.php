@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="http://localhost/proyecto_tienda_fruitsMVC/styles/styles.css">
 </head>
 <body>
     <!--HEADER-->
-    <header class="header">
+    <!-- <header class="header"> -->
+    <header class="header <?php echo $this->getUbicacionClase() == "Shop"? "header-shop": ""?>">
         <nav class="nav">
             <div class="nav__div1">
-                <img class="menu__img" src="Img/logo.png" alt="logo">
+                <img class="menu__img" src="http://localhost/proyecto_tienda_fruitsMVC/Img/logo.png" alt="logo">
                 <ul class="menu">
                     <div class="menu__div1">
                         <li class="menu__item menu__item--modified"><div class="li__div-a"><a href="" class="menu__div1-a menu__div1-a--modified-home">Home</a></div><button class="menu__item-button"><i class="fas fa-plus"></i></button></li>
@@ -21,7 +22,7 @@
                         <li class="menu__item menu__item--modified"><div class="li__div-a"><a href="" class="menu__div1-a">Pages</a></div><button class="menu__item-button"><i class="fas fa-plus"></i></button></li>
                         <li class="menu__item menu__item--modified"><div class="li__div-a"><a href="" class="menu__div1-a">News</a></div><button class="menu__item-button"><i class="fas fa-plus"></i></button></li>
                         <li class="menu__item"><a href="" class="menu__div1-a">Contact</a></li>
-                        <li class="menu__item menu__item--modified"><div class="li__div-a"><a href="" class="menu__div1-a">Shop</a></div><button class="menu__item-button"><i class="fas fa-plus"></i></button></li>
+                        <li class="menu__item menu__item--modified"><div class="li__div-a"><a href="http://localhost/proyecto_tienda_fruitsMVC/Shop" class="menu__div1-a">Shop</a></div><button class="menu__item-button"><i class="fas fa-plus"></i></button></li>
                     </div>
                     <div class="menu__div2">
                         <li class="menu__item menu__item--modified-shopping-cart"><a class="menu__div2-a" href=""><i class="fas fa-shopping-cart"></i></a></li>
@@ -102,6 +103,6 @@
         </div>
     </footer>
     <!---------->
-    <script src="scripts/scripts.js"></script>
+    <script src="http://localhost/proyecto_tienda_fruitsMVC/scripts/scripts.js"></script>
 </body>
 </html>
