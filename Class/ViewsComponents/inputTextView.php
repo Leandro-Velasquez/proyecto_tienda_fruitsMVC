@@ -1,1 +1,1 @@
-<input class="<?php echo $this->getClases(); ?>" type="text" name="<?php echo $this->getName(); ?>" placeholder="<?php echo $this->getPlaceholder(); ?>">
+<input class="<?php echo $this->getClases(); ?>" type="text" name="<?php echo $this->getName(); ?>" placeholder="<?php echo $this->getPlaceholder(); ?>" autocomplete="<?php echo $this->getAutocomplete(); ?>">
