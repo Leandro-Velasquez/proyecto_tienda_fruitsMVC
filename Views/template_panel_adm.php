@@ -14,7 +14,7 @@
             <p class="nav-adm__p">Panel de administracion</p>
             <button class="nav-adm__btn-menu btn-menu"><i class="nav-adm__i fas fa-bars"></i></button>
             <ul class="menu-adm menu">
-                <li class="menu-adm__item"><a class="menu-adm__enlace" href="http://localhost/proyecto_tienda_fruitsMVC/PanelAdministracion">Inicio</a></li>
+                <li class="menu-adm__item menu-adm__item--modified"><a class="menu-adm__enlace menu-adm__enlace--modified" href="http://localhost/proyecto_tienda_fruitsMVC/PanelAdministracion">Inicio</a></li>
                 <li class="menu-adm__item"><a class="menu-adm__enlace" href="http://localhost/proyecto_tienda_fruitsMVC/PanelAdministracion/administrarProductos">Administrar productos</a></li>
                 <li class="menu-adm__item"><a class="menu-adm__enlace" href="administrar_noticias.php">Administrar noticias</a></li>
                 <li class="menu-adm__item"><a class="menu-adm__enlace" href="modificar_testimonios.php">Modificar testimonios</a></li>

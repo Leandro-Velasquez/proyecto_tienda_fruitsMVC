@@ -762,7 +762,7 @@ body{
 }
 
 .container-adm {
-    height: 100vh;
+    height: auto;
     background-color: #154772;
 }
 .container-adm__div {
@@ -880,6 +880,29 @@ body{
     background-color: #3d7543;
     transition: all .4s;
 }
+.agregar-productos__cartel {
+    margin-bottom: 8px;
+    padding: 12px 0px;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    text-align: center;
+}
+
+.agregar-productos__cartel-exito {
+    margin-bottom: 8px;
+    padding: 12px 0px;
+    border-radius: 5px;
+    color: white;
+    background-color: green;
+    text-align: center;
+}
+
+
+
+
+
+
 
 
 
@@ -1155,6 +1178,22 @@ body{
     }
     .section-our-products__producto {
         width: 400px;
+    }
+
+    .menu-adm {
+        align-items: center;
+        top: 0;
+    }
+    .menu-adm__item {
+        height: 36px;
+        width: 175px;
+        border: none;
+    }
+    .menu-adm__enlace {
+        padding: 0;
+    }
+    .menu-adm__enlace--modified {
+        padding: 8px 0px;
     }
 }
 @media screen and (min-width: 1024px){
