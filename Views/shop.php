@@ -4,5 +4,14 @@
     </div>
 </header>
 <section class="shop-products-section">
+    <div>
 
+    </div>
+    <div>
+        <?php
+        include "Class/ProductosTiendaApp.php";
+        $productosTienda = new ProductosTiendaApp(6, $nPagina);
+        $productosTienda->productosTiendaAppView();
+        ?>
+    </div>
 </section>

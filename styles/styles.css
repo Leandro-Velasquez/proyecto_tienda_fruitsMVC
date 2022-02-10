@@ -937,6 +937,85 @@ body{
 
 
 
+.shop-products-section {
+    padding: 70px 0px;
+    background-color: whitesmoke;
+}
+.productos-tienda-app-container {
+
+}
+.productos-tienda-app-container__div1-productos {
+
+}
+.shop-productos__producto-container {
+    width: 370px;
+    padding: 50px 0px;
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+}
+.shop-productos__producto-container:hover {
+    background-color: whitesmoke;
+    transition: all .4s;
+}
+.shop-productos__img {
+    width: 200px;
+    margin-bottom: 40px;
+}
+.shop-productos__container-h3-p-span {
+    text-align: center;
+}
+.shop-productos__h3 {
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.shop-productos__p {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #807e7e;
+}
+.shop-productos__span {
+    display: block;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+}
+.shop-productos__button {
+    padding: 12px 25px;
+    color: white;
+    border-radius: 50px;
+    background-color: #519259;
+    text-decoration: none;
+}
+.shop-productos__button:hover {
+    color: #519259;
+    background-color: #011527;
+    transition: all .4s;
+}
+
+
+
+
+
+.productos-tienda-app-container__div2-botones {
+    display: flex;
+    justify-content: center;
+}
+.shop-productos-tienda__boton {
+    margin-right: 12px;
+    padding: 8px 14px;
+    border-radius: 50px;
+    color: #807e7e;
+    background-color: #dbdbdb;
+    text-decoration: none;
+}
+
+
 
 
 
