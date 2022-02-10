@@ -74,5 +74,10 @@ class Paginas {
             $this->paginaActual = $this->getCantidadPaginas();
         }
     }
+
+    public function getIndiceDesdeDondeTraerRegistrosDB($nPagina)
+    {
+        return ($nPagina - 1) * $this->getCantidadRegistrosMostradosXPagina();
+    }
 }
 ?>
