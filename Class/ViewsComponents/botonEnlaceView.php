@@ -1,0 +1,1 @@
+<a class="<?php echo $this->getClases(); ?>" href="<?php echo $this->getLink(); ?>"><?php echo $this->getContenido(); ?></a>
