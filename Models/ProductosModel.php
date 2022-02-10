@@ -58,6 +58,15 @@ class ProductosModel{
         return $sql->fetchall(PDO::FETCH_ASSOC);
     }
 
+    public function getProductosNombrePrecioImgLimitOffset($limit, $indice)
+    {
+        $sql = $this->con->prepare('SELECT nombre, precio, imagen FROM productos LIMIT :desde,:cantidadRegistros');
+        $sql->bindParam(':desde', $indice, PDO::PARAM_INT);
+        $sql->bindParam(':cantidadRegistros', $limit, PDO::PARAM_INT);
+        $sql->execute();
+        return $sql->fetchall(PDO::FETCH_ASSOC);
+    }
+
     public function getProducto($numeroDeRegistro)
     {
         $sql = $this->con->prepare("SELECT * FROM productos LIMIT :numeroDeRegistro,1");
