@@ -5,9 +5,19 @@ class ShopController extends Controller
     {
         $this->setUbicacionClase("Shop");
     }
-    public function index()
+
+    public function index($nPagina)
     {
-        $this->cargarTemplate("shop");
+        $arrayParametros = array();
+        if(empty($nPagina))
+        {
+            $arrayParametros["nPagina"] = 1;
+        }
+        else
+        {
+            $arrayParametros["nPagina"] = $nPagina;
+        }
+        $this->cargarTemplate("shop", $arrayParametros);
     }
 }
 ?>
