@@ -35,14 +35,10 @@ class ProductosTiendaApp
     {
         for($i = 1; $i <= $this->paginas->getCantidadPaginas(); $i++)
         {
-            array_push($this->botones, new BotonEnlace($i, "http://localhost/proyecto_tienda_fruitsMVC/Shop/index/".$i, "shop-productos-tienda__boton"));
+            array_push($this->botones, new BotonEnlace($i, "http://localhost/proyecto_tienda_fruitsMVC/Shop/index/".$i, $i == $this->nPaginaActual?"shop-productos-tienda__boton  shop-productos-tienda__boton--modified":"shop-productos-tienda__boton"));
             call_user_func_array(array($this->botones[$i-1], "botonEnlaceView"), array());
         }
     }
-
-
-
-
 
     public function getProductos()
     {
