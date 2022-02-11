@@ -6,7 +6,7 @@ class ShopController extends Controller
         $this->setUbicacionClase("Shop");
     }
 
-    public function index($nPagina)
+    public function index($nPagina = null)
     {
         $arrayParametros = array();
         if(empty($nPagina))
