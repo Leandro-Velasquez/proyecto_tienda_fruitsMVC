@@ -27,6 +27,11 @@ class BotonEnlace
         return $this->clases;
     }
 
+    public function agregarNuevaClase($nuevaClase)
+    {
+        $this->clases .= " " . $nuevaClase;
+    }
+
     public function botonEnlaceView()
     {
         require "ViewsComponents/botonEnlaceView.php";
