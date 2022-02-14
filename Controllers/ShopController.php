@@ -3,7 +3,7 @@ class ShopController extends Controller
 {
     public function __construct()
     {
-        $this->setUbicacionClase("Shop");
+        $this->setUbicacionClase("shop");
     }
 
     public function index($nPagina = null)

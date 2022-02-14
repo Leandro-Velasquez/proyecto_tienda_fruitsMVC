@@ -11,14 +11,14 @@
 <body>
     <!--HEADER-->
     <!-- <header class="header"> -->
-    <header class="header <?php echo $this->getUbicacionClase() == "Shop"? "header-shop": ""?>">
+    <header class="header <?php echo "header-".$this->getUbicacionClase();?>">
         <nav class="nav">
             <div class="nav__div1">
                 <img class="menu__img" src="http://localhost/proyecto_tienda_fruitsMVC/Img/logo.png" alt="logo">
                 <ul class="menu">
                     <div class="menu__div1">
-                        <li class="menu__item menu__item--modified"><div class="li__div-a"><a href="" class="menu__div1-a menu__div1-a--modified-home">Home</a></div><button class="menu__item-button"><i class="fas fa-plus"></i></button></li>
-                        <li class="menu__item"><a href="" class="menu__div1-a"">About</a></li>
+                        <li class="menu__item menu__item--modified"><div class="li__div-a"><a href="http://localhost/proyecto_tienda_fruitsMVC/Home" class="menu__div1-a menu__div1-a--modified-home">Home</a></div><button class="menu__item-button"><i class="fas fa-plus"></i></button></li>
+                        <li class="menu__item"><a href="http://localhost/proyecto_tienda_fruitsMVC/About" class="menu__div1-a"">About</a></li>
                         <li class="menu__item menu__item--modified"><div class="li__div-a"><a href="" class="menu__div1-a">Pages</a></div><button class="menu__item-button"><i class="fas fa-plus"></i></button></li>
                         <li class="menu__item menu__item--modified"><div class="li__div-a"><a href="" class="menu__div1-a">News</a></div><button class="menu__item-button"><i class="fas fa-plus"></i></button></li>
                         <li class="menu__item"><a href="" class="menu__div1-a">Contact</a></li>
