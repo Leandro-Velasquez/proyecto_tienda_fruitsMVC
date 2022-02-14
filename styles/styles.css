@@ -945,13 +945,18 @@ body{
 
 }
 .productos-tienda-app-container__div1-productos {
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
 }
 .shop-productos__producto-container {
+    height: 400px;
     width: 370px;
     padding: 50px 0px;
-    margin: auto;
-    margin-bottom: 15px;
+    /*margin: auto;*/
+    margin-right: 18px;
+    margin-bottom: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -963,6 +968,7 @@ body{
     transition: all .4s;
 }
 .shop-productos__img {
+    height: 180px;
     width: 200px;
     margin-bottom: 40px;
 }
@@ -1005,6 +1011,7 @@ body{
 .productos-tienda-app-container__div2-botones {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 .shop-productos-tienda__boton {
     margin-right: 12px;
@@ -1014,6 +1021,169 @@ body{
     background-color: #dbdbdb;
     text-decoration: none;
 }
+.shop-productos-tienda__boton:hover {
+    color: #464646;
+    background-color: #519259;
+    transition: all .4s;
+}
+.shop-productos-tienda__boton--modified {
+    color: #464646;
+    background-color: #519259;
+}
+
+
+
+
+
+/*Estilos pagina About*/
+.header-about {
+    height: 70vh;
+    padding: 0px 10px;
+    padding-top: 30px;
+    position: relative;
+    background: linear-gradient(rgba(5, 7, 12, 0.55), rgba(5, 7, 12, 0.55)), url("../Img/frutas.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+.about-section-why {
+    padding: 60px 0px;
+}
+.about-section-why__container-div1-div2 {
+    width: 360px;
+    margin: auto;
+}
+.about-section-why__div1 {
+
+}
+.about-section-why__div2 {
+    display: none;
+    width: 100%;
+}
+.about-section-why__h2 {
+    font-size: 30px;
+}
+.about-section-why__span {
+    color: #519259;
+}
+.about-section-why__div-container-items {
+
+}
+.about-section-why__div-item {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+.about-section-why__h4 {
+    margin: 0;
+    font-size: 18px;
+}
+.about-section-why__p {
+    margin: 0;
+    color: #757272;
+    font-size: 14px;
+    line-height: 22px;
+}
+.fa-money-bill-alt, .fa-briefcase {
+    margin-right: 15px;
+    padding: 20px;
+    color: #519259;
+    border: 2px solid #519259;
+    border-style: dotted;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+
+
+.about-section-our-team {
+    padding: 80px 0px;
+    padding-bottom: 0px;
+}
+.about-section-our-team__div1 {
+    width: 280px;
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.about-section-our-team__h3 {
+    margin: 0;
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 27px;
+}
+.about-section-our-team__h3::after {
+    content: "";
+    width: 40px;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #519259;
+}
+.about-section-our-team__span {
+    color: #519259;
+}
+.about-section-our-team__div1-p {
+    margin: 0;
+    color: #555555;
+    line-height: 25px;
+}
+
+
+.about-section-our-team__div2 {
+    width: 360px;
+    margin: auto;
+}
+.about-member-team {
+    margin-bottom: 50px;
+}
+.about-member-team__div1 {
+    position: relative;
+    margin-bottom: 15px;
+}
+.about-member-team__img {
+    height: 360px;
+    width: 100%;
+    border-radius: 5px;
+}
+.about-member-team__container-social {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+.about-member-team__a {
+    height: 30px;
+    width: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50px;
+    background-color: #519259;
+    text-decoration: none;
+}
+.about-member-team__i {
+    font-size: 14px;
+}
+.about-member-team__div2 {
+    text-align: center;
+}
+.about-member-team__h4 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.about-member-team__p {
+    margin: 0;
+    font-weight: 600;
+    color: #555555;
+}
+
+
 
 
 
@@ -1050,6 +1220,9 @@ body{
         justify-content: space-between;
     }
     .section-our-news__container {
+        width: 480px;
+    }
+    .about-section-why__container-div1-div2 {
         width: 480px;
     }
 }
@@ -1104,6 +1277,29 @@ body{
     .section-our-news__h3 {
         font-size: 50px;
         margin-bottom: 20px;
+    }
+
+
+
+    .about-section-why {
+        padding: 100px 0px;
+    }
+    .about-section-why__h2 {
+        font-size: 45px;
+    }
+    .about-section-why__container-div1-div2 {
+        width: 670px;
+    }
+    .about-section-why__div1 {
+        
+    }
+    .about-section-why__div-container-items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .about-section-why__div-item {
+        width: 320px;
     }
 }
 @media screen and (min-width: 800px) {
@@ -1304,6 +1500,35 @@ body{
     .menu-adm__enlace--modified {
         padding: 8px 0px;
     }
+
+
+
+
+
+    .about-section-why__h2 {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .about-section-why__container-div1-div2 {
+        width: 920px;
+        display: flex;
+    }
+    .about-section-why__div1 {
+        margin-right: 40px;
+    }
+    .about-section-why__div-item {
+        width: 220px;
+        align-items: flex-start;
+    }
+    .about-section-why__div2 {
+        display: block;
+        width: 750px;
+    }
+    .about-section-why__img {
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+    }
 }
 @media screen and (min-width: 1024px){
     .section-our-products__div-products{
@@ -1330,6 +1555,14 @@ body{
     .section-our-products__producto{
         width: 320px;
     }
+
+
+    .about-section-why__div1 {
+        width: 650px;
+    }
+    .about-section-why__container-div1-div2 {
+        width: 1040px;
+    }
 }
 @media screen and (min-width: 1200px) {
     .header-div {
@@ -1355,6 +1588,10 @@ body{
     }
     .div-social {
         width: 1080px;
+    }
+
+    .about-section-why__container-div1-div2 {
+        width: 1090px;
     }
 }
 
