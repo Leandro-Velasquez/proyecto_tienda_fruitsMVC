@@ -1,0 +1,1 @@
+<textarea class="<?php echo $this->getClases(); ?>" name="<?php echo $this->getName(); ?>" id="<?php echo $this->getId(); ?>" placeholder="<?php echo $this->getPlaceholder(); ?>" cols="30" rows="10"></textarea>
