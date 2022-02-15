@@ -21,7 +21,7 @@
                         <li class="menu__item"><a href="http://localhost/proyecto_tienda_fruitsMVC/About" class="menu__div1-a"">About</a></li>
                         <li class="menu__item menu__item--modified"><div class="li__div-a"><a href="" class="menu__div1-a">Pages</a></div><button class="menu__item-button"><i class="fas fa-plus"></i></button></li>
                         <li class="menu__item menu__item--modified"><div class="li__div-a"><a href="" class="menu__div1-a">News</a></div><button class="menu__item-button"><i class="fas fa-plus"></i></button></li>
-                        <li class="menu__item"><a href="" class="menu__div1-a">Contact</a></li>
+                        <li class="menu__item"><a href="http://localhost/proyecto_tienda_fruitsMVC/Contact" class="menu__div1-a">Contact</a></li>
                         <li class="menu__item menu__item--modified"><div class="li__div-a"><a href="http://localhost/proyecto_tienda_fruitsMVC/Shop" class="menu__div1-a">Shop</a></div><button class="menu__item-button"><i class="fas fa-plus"></i></button></li>
                     </div>
                     <div class="menu__div2">
