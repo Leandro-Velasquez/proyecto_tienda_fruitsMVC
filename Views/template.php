@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="http://localhost/proyecto_tienda_fruitsMVC/styles/styles.css">
 </head>
 <body>
+    <?php include "Class/BotonCarritoCompras.php"; ?>
     <!--HEADER-->
-    <!-- <header class="header"> -->
     <header class="header <?php echo "header-".$this->getUbicacionClase();?>">
         <nav class="nav">
             <div class="nav__div1">
@@ -22,14 +22,15 @@
                         <li class="menu__item menu__item--modified"><div class="li__div-a"><a href="" class="menu__div1-a">Pages</a></div><button class="menu__item-button"><i class="fas fa-plus"></i></button></li>
                         <li class="menu__item menu__item--modified"><div class="li__div-a"><a href="" class="menu__div1-a">News</a></div><button class="menu__item-button"><i class="fas fa-plus"></i></button></li>
                         <li class="menu__item"><a href="http://localhost/proyecto_tienda_fruitsMVC/Contact" class="menu__div1-a">Contact</a></li>
-                        <li class="menu__item menu__item--modified"><div class="li__div-a"><a href="http://localhost/proyecto_tienda_fruitsMVC/Shop" class="menu__div1-a">Shop</a></div><button class="menu__item-button"><i class="fas fa-plus"></i></button></li>
+                        <li class="menu__item menu__item--modified"><div class="li__div-a"><a href="http://localhost/proyecto_tienda_fruitsMVC/Shop/ingresar_tienda" class="menu__div1-a">Shop</a></div><button class="menu__item-button"><i class="fas fa-plus"></i></button></li>
                     </div>
                     <div class="menu__div2">
                         <li class="menu__item menu__item--modified-shopping-cart"><a class="menu__div2-a" href=""><i class="fas fa-shopping-cart"></i></a></li>
                     </div>
                 </ul>
                 <div>
-                    <a class="nav__shopping-cart" href=""><i class="fas fa-shopping-cart"></i></a>
+                    <a class="nav__shopping-cart" href="http://localhost/proyecto_tienda_fruitsMVC/Shop/cart"><?php $botonCarrito = new BotonCarritoCompras(array("div-shopping-cart", "icon-shopping-cart", "count-products-shopping-cart"));
+                    $botonCarrito->setCantidadProductos($this->getUbicacionClase());$botonCarrito->botonCarritoComprasView(); ?></a>
                     <a href="" class="nav__search"><i class="fas fa-search"></i></a>
                     <button class="btn-menu"><i class="fas fa-bars"></i></button>
                 </div>
