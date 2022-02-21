@@ -40,6 +40,26 @@ body{
 .nav__shopping-cart {
     display: none;
 }
+.div-shopping-cart {
+    display: inline-block;
+    position: relative;
+}
+.icon-shopping-cart {
+
+}
+.count-products-shopping-cart {
+    height: 22px;
+    width: 22px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -18px;
+    right: 0px;
+    background-color: #519259;
+    border-radius: 50px;
+    color: white;
+}
 .btn-menu {
     background-color: #519259;
     border: none;
@@ -1309,9 +1329,42 @@ body{
 
 
 
+/*ESTILOS pagina Cart*/
+.section-cart {
 
-
-
+}
+.section-cart__div {
+    overflow: scroll;
+}
+.table-cart {
+    width: 610px;
+    border-collapse: collapse
+}
+.table-cart__tr-head-cart {
+    height: 50px;
+    background-color: #e0e0e0;
+}
+.table-cart__th {
+    font-size: 14px;
+    font-weight: 100;
+}
+.table-cart__th:nth-child(1)
+{
+    width: 200px;
+}
+.table-cart__th:nth-child(2), .table-cart__th:nth-child(3), .table-cart__th:nth-child(4), .table-cart__th:nth-child(5)
+.table-cart__tr-product {
+    width: 100px;
+}
+.table-cart__td {
+    text-align: center;
+    height: 80px;
+    border: 1px solid #e4e4e4;
+}
+.table-cart__img {
+    height: 50px;
+    width: 50px;
+}
 
 
 
