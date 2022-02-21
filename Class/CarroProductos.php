@@ -36,6 +36,17 @@ class CarroProductos
         }
     }
 
+    public function getSubtotal()
+    {
+        $sum = 0;
+        foreach($this->productos as $producto)
+        {
+            $sum += $producto['precio'];
+        }
+
+        return $sum;
+    }
+
     public function getClases()
     {
         return $this->clases;
