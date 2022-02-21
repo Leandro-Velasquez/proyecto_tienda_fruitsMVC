@@ -82,6 +82,14 @@ class ProductosModel{
         $sql->execute();
         return $sql->fetch(PDO::FETCH_ASSOC);
     }
+
+    public function buscarProductoPorNombre($nombre)
+    {
+        $sql = $this->con->prepare("SELECT imagen, nombre, precio FROM productos WHERE nombre=:n");
+        $sql->bindParam(":n", $nombre, PDO::PARAM_STR);
+        $sql->execute();
+        return $sql->fetch(PDO::FETCH_ASSOC);
+    }
 }
 
 ?>
