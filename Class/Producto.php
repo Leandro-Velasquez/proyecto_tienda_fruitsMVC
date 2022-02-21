@@ -15,7 +15,7 @@ class Producto
         $this->nombre = $nombre;
         $this->precio = $precio;
         $this->clases = $clases;
-        $this->boton = new BotonEnlace("Add to Cart", "#", $this->getClases()[6]);
+        $this->boton = new BotonEnlace("Add to Cart", "http://localhost/proyecto_tienda_fruitsMVC/Shop/procesar_compra/".$this->getNombre(), $this->getClases()[6]);
     }
 
     public function getImagen()
